@@ -1,93 +1,104 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+<p>A definição do problema foi consolidada tendo como base as experiências pessoais dos membros do grupo, assim como de pessoas próximas a cada um, que compartilham a mesma necessidade. Com base nisso, foi possível inferir outros possíveis problemas enfrentados por clientes, gerentes e manobristas. Tais detalhes foram organizados em personas e histórias de usuários.</p>
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+<p>As personas levantadas durante o processo de compreensão do problema são apresentadas nas figuras que se seguem:</p>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+<p>Com base na análise das personas forma identificadas as seguintes histórias de usuários:</p>
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+<br>
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+|EU COMO... `PERSONA`   | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|-----------------------|------------------------------------|----------------------------------------|
+|Cesefredo José         | Modernizar a gestão do estacionamento. | Adequar-se às novas tecnologias disponíveis para gestão do negócio. |
+|Cesefredo José         | Implementar um sistema que proporcione o controle de fluxo.| Organizar de forma ágil e segura as informações de entrada e saída dos veículos. |
+|Cesefredo José         | Ampliar a visibilidade da empresa no mercado. | Expandir a rede de estacionamentos. |
+|Marco Marcelo Tolentino| Acessar de forma rápida informações sobre a quantidade de vagas disponíveis no estacionamento. | Atender com maior qualidade ao cliente que chega ao estacionamento.  |
+|Marco Marcelo Tolentino| Ter acesso às informações sobre a quantidade de horas contratadas por cada veículo estacionado. | Organizar melhor a disposição dos veículos no ambiente do estacionamento. |
+|Marco Marcelo Tolentino| Orientar o cliente, no momento do checkout para que faça o pagamento online. | Facilitar o processo de cobranças e recebimentos do caixa. |
+|Clotilde Maria         | Utilizar aplicativo de busca de vagas de estacionamento de acordo com sua localização. | Ter comodidade, conforto e segurança, sem se preocupar com a busca de local para estacionar. |
+|Clotilde Maria         | Localizar rapidamente uma vaga de estacionamento. | Contar com a praticidade de estacionar facilmente nos grandes centros urbanos. |
+|Clotilde Maria         | Ter facilidade para fazer pagamento online. | Não se preocupar em portar dinheiro para pagamento dos serviços de estacionamento. |
+|Lourival Filho         | Localizar estacionamentos próximos a sua empresa, com melhor custo-benefício. | Estacionar seu carro novo com segurança, sem se preocupar com possíveis furtos ou danos ao veículo. |
+|Lourival Filho         | Reservar vaga em um estacionamento. | Precisar sair da sua empresa, em eventuais momentos, e ter sua vaga disponível no seu retorno. |
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+## Casos de uso
+
+<p> De acordo com o perfil e as histórias das personas mencionadas no item anterior, foram identificados os seguintes casos de uso:</p>
+<br>
+<p>Para o gestor do estacionamento:
+•	Cadastrar a empresa no sistema; 
+•	Cadastrar o número de vagas existentes no estacionamento;
+•	Cadastrar o número de vagas reservadas para mensalistas e diaristas;
+•	Cadastrar o valor das vagas, por hora, dia ou mês;
+•	Cadastrar as formas de pagamento que poderão ser aceitas.</p>
+<br>
+<p>Para o manobrista da empresa:
+•	Visualizar o status das vagas (disponíveis e ocupadas);
+•	Lançar no sistema as vagas ocupadas por clientes sem acesso ao aplicativo;
+•	Visualizar o tempo de ocupação das vagas;
+•	Calcular o valor do serviço para cada cliente.</p>
+<br>
+<p>Para o cliente usuário do estacionamento:
+•	Informar o endereço em que estiver no momento da busca;
+•	Realizar cadastro fornecendo nome e email;
+•	Efetuar busca por estacionamentos próximos ao endereço informado;
+•	Selecionar o estacionamento escolhido para indicar o interesse por uma vaga;
+•	Realizar o pagamento do uso do estacionamento.</p>
+
+## Ambiente a ser implementado
+
+<p>O ambiente onde o sistema será implementado é um estacionamento de veículos para fins comerciais, sendo o estacionamento uma área de dimensões limitadas, previamente destinadas à locação de veículos por determinado período.</p>
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+<p>Para alcançar satisfatoriamente a solução do problema apresentado, todas as suas características serão descritas por meio dos requisitos que serão apresentados para tal, com o objetivo de determinar as funcionalidades previstas para o projeto. </p>
+<p>Assim, serão apresentados requisitos funcionais e requisitos não funcionais, sendo respectivamente, os que descrevem as funcionalidades que o sistema deverá apresentar para permitir a interação dos usuários, e aqueles que descrevem as qualidades que o sistema e suas funcionalidades devem apresentar para sua aceitação.</p>
+<p>As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.</p>
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------|------|
+|RF-001| O sistema deve apresentar um mecanismo de busca que permita ao cliente localizar estacionamentos cadastrados que possuam vagas para estacionamento imediato de acordo com sua localização. | ALTA | 
+|RF-002| O sistema deve permitir que o cliente crie uma conta para realizar um cadastro simples, com exigência de nome e email, que permitirá realizar a busca e a reserva da vaga.  | ALTA |
+|RF-003| O sistema deve apresentar uma página com cada estabelecimento comercial destinado à disponibilização de vagas de estacionamento para que o cliente proceda com a melhor escolha.  | ALTA |
+|RF-004| O sistema deve permitir ao usuário efetuar a reserva online da vaga no estabelecimento escolhido. | ALTA |
+|RF-005| O sistema deve permitir que o cliente salve como favorito um determinado estabelecimento. | BAIXA |
+|RF-006| O sistema deve permitir que o usuário crie uma conta para realizar um cadastro simples, com exigência de nome e email, para permitir o cadastro. | ALTA |
+|RF-007| O sistema deve permitir que o gestor do estacionamento realize cobrança online. | ALTA |
+|RF-008| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas disponíveis. | ALTA |
+|RF-009| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas ocupadas. | ALTA |
+|RF-010| O sistema deve permitir que o manobrista visualize a quantidade de horas contratadas por cada veículo estacionado. | BAIXA |
+|RF-011| O sistema deve permitir comunicação entre o cliente e o estabelecimento. | BAIXA |
+|RF-012| O sistema deve permitir que a empresa de estacionamento seja avaliada pelo cliente. | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|------|
+|RNF-001|  O sistema será implementado por uma plataforma Web. | ALTA | 
+|RNF-002| O sistema deve ser totalmente responsivo. | ALTA |
+|RNF-003| O sistema deve conter tecnologias e versões adaptadas para ser renderizada nos navegadores mais usados (Google Chrome, Microsoft Edge, Firefox, Microsoft Explore). | ALTA | 
+|RNF-002| O sistema deve ser publicado em um ambiente acessível publicamente na internet (Heroku). | ALTA | 
+|RNF-002| O sistema deve consumir APIs externas para realização de funcionalidades de geolocalização (Via CEP). | ALTA | 
+|RNF-002|  O sistema deverá usar banco de dados relacional (SQL). | ALTA | 
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+<p>As restrições listadas na tabela abaixo limitam a execução deste projeto:</p>
 
 |ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|-----|-------------------------------------------------------|
+|RE-01| O projeto deverá ser entregue ao final do semestre letivo, não podendo ultrapassar a data de 26/06/2022.|
+|RE-02| O projeto deverá se restringir às tecnologias básicas de uma aplicação interativa.|
+|RE-03| O projeto deverá ser desenvolvido por uma equipe composta por cinco membros.|
+|RE-04| O banco de dados a ser utilizado deverá ser da categoria relacional.|
 
 ## Diagrama de Casos de Uso
 
