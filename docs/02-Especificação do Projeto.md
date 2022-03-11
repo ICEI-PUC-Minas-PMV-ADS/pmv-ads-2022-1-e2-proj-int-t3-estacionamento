@@ -6,6 +6,45 @@
 
 <p>As personas levantadas durante o processo de compreensão do problema são apresentadas nas figuras que se seguem:</p>
 
+|<img src="https://user-images.githubusercontent.com/88891675/157912851-11f79a89-7db9-4e4a-9327-b422d2cb8745.jpg" width="200">| Cesefredo José |
+|-------------------------------------------------------------------|------------------------------------------------------------|
+| Idade | 60 anos |
+| Ocupação | Proprietário e gestor de empresas de estacionamento. |
+| Aplicativos | Facebook, WhatsApp, aplicativos bancários. |
+| Motivação | Inserir sua empresa no mundo digital. |
+| Frustração | Dificuldade em acompanhar os avanços tecnológicos. |
+
+<br>
+
+|<img src="https://user-images.githubusercontent.com/88891675/157914286-22aa9f05-f9a7-4785-a7ce-7f8730c8d551.jpg" width="285">| Marco Marcelo Tolentino |
+|-------------------------------------------------------------------|------------------------------------------------------------|
+| Idade | 38 anos |
+| Ocupação | Manobrista (profissional habilitado para movimentar e posicionar veículos em um estacionamento). |
+| Aplicativos | Facebook, WhatsApp, Netflix, aplicativos bancários. |
+| Motivação | Obter informações constantemente atualizadas para organizar o posicionamento dos veículos de forma mais prática e funcional possível. |
+| Frustração | Falta de praticidade do sistema de estacionamento, atualmente feita com uma aplicação muito simples e obsoleta. |
+      
+<br>
+
+|<img src="https://user-images.githubusercontent.com/88891675/157915662-4881cd55-ef7e-467f-bbfc-0aea1ccb9c56.jpg" width="380"> | Clotilde Maria |
+|-------------------------------------------------------------------|------------------------------------------------------------|
+| Idade | 32 anos |
+| Ocupação | Representante comercial. |
+| Aplicativos | Facebook, WhatsApp, Linkedin, Instagram, Waze, aplicativos bancários. |
+| Motivação | Agilidade em seus deslocamentos para visita a clientes. |
+| Frustração | Impossibilidade de fazer reserva de vaga com antecedência em estacionamentos próximos aos locais de suas visitas, perdendo tempo na busca por uma vaga para estacionar o seu veículo. |
+
+<br>
+
+|<img src="https://user-images.githubusercontent.com/88891675/157916479-9fad2223-9db8-445e-8d2c-14fe156fcf9b.jpg" width="485">| Lourival Filho |
+|-------------------------------------------------------------------|------------------------------------------------------------|
+| Idade | 28 anos |
+| Ocupação | Jovem empreendedor. |
+| Aplicativos | Facebook, WhatsApp, Linkedin, Instagram, Waze, aplicativos bancários. |
+| Motivação | Estacionar o seu veículo em uma vaga reservada, em um estacionamento próximo à sua empresa. |
+| Frustração | Como necessita realizar atividades fora da empresa com frequencia, utiliza o carro em diversos momentos do dia. Nem sempre encontra vaga em estacionamentos próximos ao seu local de trabalho e precisa ficar sempre trocando de estacionamento. |
+
+<br>
 
 ## Histórias de Usuários
 
