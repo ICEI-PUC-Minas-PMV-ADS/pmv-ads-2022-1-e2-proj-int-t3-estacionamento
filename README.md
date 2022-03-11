@@ -1,9 +1,7 @@
 # TÍTULO DO PROJETO
 
 `CURSO: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
-
 `DISCIPLINA: Projeto - Desenvolvimento de uma Aplicação Interativa`
-
 `SEMESTRE: 2022.1`
 
 O projeto consiste em desenvolver uma aplicação interativa para empresas de estacionamento e para seus clientes. Além de otimizar as atividades do estacionamento, estes poderão ser buscados pelo cliente que deseja estacionar o seu veículo. Essa busca será baseada na localização de ambos os atores e também de acordo com as vagas disponíveis. Assim, a escolha pelo cliente poderá ser feita de forma mais prática e rápida e a administração do estacionamento será mais eficiente.
