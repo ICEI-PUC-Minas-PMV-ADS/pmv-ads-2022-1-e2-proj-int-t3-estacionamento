@@ -30,26 +30,26 @@
 ## Casos de uso
 
 <p> De acordo com o perfil e as histórias das personas mencionadas no item anterior, foram identificados os seguintes casos de uso:</p>
+
+<p>Para o gestor do estacionamento:<br>
+•	Cadastrar a empresa no sistema;<br>
+•	Cadastrar o número de vagas existentes no estacionamento;<br>
+•	Cadastrar o número de vagas reservadas para mensalistas e diaristas;<br>
+•	Cadastrar o valor das vagas, por hora, dia ou mês;<br>
+•	Cadastrar as formas de pagamento que poderão ser aceitas.<br></p>
 <br>
-<p>Para o gestor do estacionamento:
-•	Cadastrar a empresa no sistema; 
-•	Cadastrar o número de vagas existentes no estacionamento;
-•	Cadastrar o número de vagas reservadas para mensalistas e diaristas;
-•	Cadastrar o valor das vagas, por hora, dia ou mês;
-•	Cadastrar as formas de pagamento que poderão ser aceitas.</p>
+<p>Para o manobrista da empresa:<br>
+•	Visualizar o status das vagas (disponíveis e ocupadas);<br>
+•	Lançar no sistema as vagas ocupadas por clientes sem acesso ao aplicativo;<br>
+•	Visualizar o tempo de ocupação das vagas;<br>
+•	Calcular o valor do serviço para cada cliente.<br></p>
 <br>
-<p>Para o manobrista da empresa:
-•	Visualizar o status das vagas (disponíveis e ocupadas);
-•	Lançar no sistema as vagas ocupadas por clientes sem acesso ao aplicativo;
-•	Visualizar o tempo de ocupação das vagas;
-•	Calcular o valor do serviço para cada cliente.</p>
-<br>
-<p>Para o cliente usuário do estacionamento:
-•	Informar o endereço em que estiver no momento da busca;
-•	Realizar cadastro fornecendo nome e email;
-•	Efetuar busca por estacionamentos próximos ao endereço informado;
-•	Selecionar o estacionamento escolhido para indicar o interesse por uma vaga;
-•	Realizar o pagamento do uso do estacionamento.</p>
+<p>Para o cliente usuário do estacionamento:<br>
+•	Informar o endereço em que estiver no momento da busca;<br>
+•	Realizar cadastro fornecendo nome e email;<br>
+•	Efetuar busca por estacionamentos próximos ao endereço informado;<br>
+•	Selecionar o estacionamento escolhido para indicar o interesse por uma vaga;<br>
+•	Realizar o pagamento do uso do estacionamento.<br></p>
 
 ## Ambiente a ser implementado
 
@@ -63,31 +63,31 @@
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|---------------------------------------------------------------------------------------------------------------------------------------------------|------|
-|RF-001| O sistema deve apresentar um mecanismo de busca que permita ao cliente localizar estacionamentos cadastrados que possuam vagas para estacionamento imediato de acordo com sua localização. | ALTA | 
-|RF-002| O sistema deve permitir que o cliente crie uma conta para realizar um cadastro simples, com exigência de nome e email, que permitirá realizar a busca e a reserva da vaga.  | ALTA |
-|RF-003| O sistema deve apresentar uma página com cada estabelecimento comercial destinado à disponibilização de vagas de estacionamento para que o cliente proceda com a melhor escolha.  | ALTA |
-|RF-004| O sistema deve permitir ao usuário efetuar a reserva online da vaga no estabelecimento escolhido. | ALTA |
-|RF-005| O sistema deve permitir que o cliente salve como favorito um determinado estabelecimento. | BAIXA |
-|RF-006| O sistema deve permitir que o usuário crie uma conta para realizar um cadastro simples, com exigência de nome e email, para permitir o cadastro. | ALTA |
-|RF-007| O sistema deve permitir que o gestor do estacionamento realize cobrança online. | ALTA |
-|RF-008| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas disponíveis. | ALTA |
-|RF-009| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas ocupadas. | ALTA |
-|RF-010| O sistema deve permitir que o manobrista visualize a quantidade de horas contratadas por cada veículo estacionado. | BAIXA |
-|RF-011| O sistema deve permitir comunicação entre o cliente e o estabelecimento. | BAIXA |
-|RF-012| O sistema deve permitir que a empresa de estacionamento seja avaliada pelo cliente. | BAIXA |
+|ID      | Descrição do Requisito  | Prioridade |
+|--------|-----------------------------------------|----|
+|RF-01| O sistema deve apresentar um mecanismo de busca que permita ao cliente localizar estacionamentos cadastrados que possuam vagas para estacionamento imediato de acordo com sua localização. | ALTA | 
+|RF-02| O sistema deve permitir que o cliente crie uma conta para realizar um cadastro simples, com exigência de nome e email, que permitirá realizar a busca e a reserva da vaga.  | ALTA |
+|RF-03| O sistema deve apresentar uma página com cada estabelecimento comercial destinado à disponibilização de vagas de estacionamento para que o cliente proceda com a melhor escolha.  | ALTA |
+|RF-04| O sistema deve permitir ao usuário efetuar a reserva online da vaga no estabelecimento escolhido. | ALTA |
+|RF-05| O sistema deve permitir que o cliente salve como favorito um determinado estabelecimento. | BAIXA |
+|RF-06| O sistema deve permitir que o usuário crie uma conta para realizar um cadastro simples, com exigência de nome e email, para permitir o cadastro. | ALTA |
+|RF-07| O sistema deve permitir que o gestor do estacionamento realize cobrança online. | ALTA |
+|RF-08| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas disponíveis. | ALTA |
+|RF-09| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas ocupadas. | ALTA |
+|RF-10| O sistema deve permitir que o manobrista visualize a quantidade de horas contratadas por cada veículo estacionado. | BAIXA |
+|RF-11| O sistema deve permitir comunicação entre o cliente e o estabelecimento. | BAIXA |
+|RF-12| O sistema deve permitir que a empresa de estacionamento seja avaliada pelo cliente. | BAIXA |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|------|
-|RNF-001|  O sistema será implementado por uma plataforma Web. | ALTA | 
-|RNF-002| O sistema deve ser totalmente responsivo. | ALTA |
-|RNF-003| O sistema deve conter tecnologias e versões adaptadas para ser renderizada nos navegadores mais usados (Google Chrome, Microsoft Edge, Firefox, Microsoft Explore). | ALTA | 
-|RNF-002| O sistema deve ser publicado em um ambiente acessível publicamente na internet (Heroku). | ALTA | 
-|RNF-002| O sistema deve consumir APIs externas para realização de funcionalidades de geolocalização (Via CEP). | ALTA | 
-|RNF-002|  O sistema deverá usar banco de dados relacional (SQL). | ALTA | 
+|ID      | Descrição do Requisito  |Prioridade |
+|--------|-----------------------------------------|----|
+|RNF-01|  O sistema será implementado por uma plataforma Web. | ALTA | 
+|RNF-02| O sistema deve ser totalmente responsivo. | ALTA |
+|RNF-03| O sistema deve conter tecnologias e versões adaptadas para ser renderizada nos navegadores mais usados (Google Chrome, Microsoft Edge, Firefox, Microsoft Explore). | ALTA | 
+|RNF-04| O sistema deve ser publicado em um ambiente acessível publicamente na internet (Heroku). | ALTA | 
+|RNF-05| O sistema deve consumir APIs externas para realização de funcionalidades de geolocalização (Via CEP). | ALTA | 
+|RNF-06|  O sistema deverá usar banco de dados relacional (SQL). | ALTA | 
 
 ## Restrições
 
