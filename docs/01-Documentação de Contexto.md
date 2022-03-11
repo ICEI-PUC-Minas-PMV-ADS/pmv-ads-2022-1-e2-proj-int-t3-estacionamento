@@ -12,7 +12,7 @@
 ## Objetivos
 
 <p>O objetivo geral da aplicação interativa é tornar mais eficiente a forma como são ofertadas as vagas em estacionamentos privados.
-<p>Os objetivos específicos do Why Park são:
+<p>Os objetivos específicos do Why Park são:<br>
 - Informatizar o sistema de controle de estacionamentos e ao mesmo tempo promover estas empresas on-line, uma vez que o cliente, ao buscar no site um local para estacionar seu veículo, poderá visualizar as empresas cadastradas no sistema;<br>
 - Promover comodidade e facilidade para o cliente de estacionamentos, pois o sistema o informará previamente sobre todas as opções de empresas que tenham vagas disponíveis e que sejam próximas ao endereço informado.<br></p>
 
