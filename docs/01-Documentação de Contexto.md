@@ -11,7 +11,7 @@
 
 ## Objetivos
 
-<p>O objetivo geral da aplicação interativa é tornar mais eficiente a forma como são ofertadas as vagas em estacionamentos privados.
+<p>O objetivo geral da aplicação é desenvolver um aplicativo / software para atender estacionamento bem como seus usuários, e tornar mais eficiente a forma como são ofertadas as vagas em estacionamentos privados. 
 <p>Os objetivos específicos do Why Park são:<br>
 - Informatizar o sistema de controle de estacionamentos e ao mesmo tempo promover estas empresas on-line, uma vez que o cliente, ao buscar no site um local para estacionar seu veículo, poderá visualizar as empresas cadastradas no sistema;<br>
 - Promover comodidade e facilidade para o cliente de estacionamentos, pois o sistema o informará previamente sobre todas as opções de empresas que tenham vagas disponíveis e que sejam próximas ao endereço informado.<br></p>
@@ -19,7 +19,7 @@
 ## Justificativa
 
 <p>Atualmente, existe apenas uma aplicação no mercado com as funcionalidades semelhantes as do Why Park, atuante somente no estado de São Paulo, e outros sistemas com funções limitadas.</p>
-<p>Assim, este projeto visa ser uma opção inicialmente para a cidade de Belo Horizonte e Região Metropolitana, criando um aplicativo mais fácil de ser acessado. Percebe-se a ausência de mecanismos que poderiam melhorar os sistemas de estacionamento tais como: um sistema mais inteligente, um processo de checkout mais eficiente na hora do pagamento, o contato entre empresa e cliente sendo feito previamente em ambiente virtual, de forma ágil e prática, dentre outros. </p>
+<p>Assim, este projeto visa ser uma opção inicialmente para a cidade de Belo Horizonte e Região Metropolitana, criando um aplicativo com recursos interativos entre cliente e estacionamento, que proporciona uma maior usabilidade para o cliente e torna mais simples e automatizada a gestão do estacionamento. Percebe-se a ausência de mecanismos que poderiam melhorar os sistemas de estacionamento tais como: um sistema mais inteligente, um processo de checkout mais eficiente na hora do pagamento, o contato entre empresa e cliente sendo feito previamente em ambiente virtual, de forma ágil e prática, dentre outros. </p>
 
 ## Público-Alvo
 
