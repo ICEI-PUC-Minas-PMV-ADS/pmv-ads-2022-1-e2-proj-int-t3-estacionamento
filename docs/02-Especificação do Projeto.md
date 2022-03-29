@@ -110,12 +110,13 @@
 |RF-04| O sistema deve permitir ao usuário efetuar a reserva online da vaga no estabelecimento escolhido. | ALTA |
 |RF-05| O sistema deve permitir que o cliente salve como favorito um determinado estabelecimento. | BAIXA |
 |RF-06| O sistema deve permitir que o usuário crie uma conta para realizar um cadastro simples, com exigência de nome e email, para permitir o cadastro. | ALTA |
-|RF-07| O sistema deve permitir que o gestor do estacionamento realize cobrança online. | ALTA |
+|RF-07| O sistema deve permitir que o gestor estabeleça a forma de cobrança (dinheiro, cartão, PIX, entre outros). | ALTA |
 |RF-08| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas disponíveis. | ALTA |
 |RF-09| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas ocupadas. | ALTA |
 |RF-10| O sistema deve permitir que o manobrista visualize a quantidade de horas contratadas por cada veículo estacionado. | BAIXA |
 |RF-11| O sistema deve permitir comunicação entre o cliente e o estabelecimento. | BAIXA |
 |RF-12| O sistema deve permitir que a empresa de estacionamento seja avaliada pelo cliente. | BAIXA |
+|RF-13| O sistema deve permitir que o gestor do estacionamento impulsione o estabelecimento em redes sociais. | BAIXA |
 
 ### Requisitos não Funcionais
 
