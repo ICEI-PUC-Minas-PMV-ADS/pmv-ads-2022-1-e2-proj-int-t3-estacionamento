@@ -109,7 +109,7 @@
 |RF-03| O sistema deve apresentar uma página com cada estabelecimento comercial destinado à disponibilização de vagas de estacionamento para que o cliente proceda com a melhor escolha.  | ALTA |
 |RF-04| O sistema deve permitir ao usuário efetuar a reserva online da vaga no estabelecimento escolhido. | ALTA |
 |RF-05| O sistema deve permitir que o cliente salve como favorito um determinado estabelecimento. | BAIXA |
-|RF-06| O sistema deve permitir que o usuário crie uma conta para realizar um cadastro simples, com exigência de nome e email, para permitir o cadastro. | ALTA |
+|RF-06| O sistema deve permitir que a empresa crie uma conta para realizar a gestão do estacionamento, inserindo razão social, CNPJ, endereço, telefone e email. | ALTA |
 |RF-07| O sistema deve permitir que o gestor estabeleça a forma de cobrança (dinheiro, cartão, PIX, entre outros). | ALTA |
 |RF-08| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas disponíveis. | ALTA |
 |RF-09| O sistema deve permitir que o gestor do estacionamento visualize a quantidade de vagas ocupadas. | ALTA |
