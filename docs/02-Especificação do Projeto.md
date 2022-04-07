@@ -117,6 +117,7 @@
 |RF-11| O sistema deve permitir comunicação entre o cliente e o estabelecimento. | BAIXA |
 |RF-12| O sistema deve permitir que a empresa de estacionamento seja avaliada pelo cliente. | BAIXA |
 |RF-13| O sistema deve permitir que o gestor do estacionamento impulsione o estabelecimento em redes sociais. | BAIXA |
+|RF-14| O sistema deve disponibilizar ao usuário a possibilidade de efetuar o pagamento conforme estipulado pelo estabelecimento. | BAIXA |
 
 ### Requisitos não Funcionais
 
