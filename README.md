@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/88891675/162574437-6390dbc4-b2b8-406e-8db3-e70d5817255b.png" width=100%>
+
 # WHY PARK
 
 `CURSO: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
@@ -51,3 +53,4 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
