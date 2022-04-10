@@ -18,6 +18,7 @@ A elaboração da interface do sistema prioriza a simplicidade e é focado em ag
 As telas do sistema possuem uma estrutura padronizada, constituída de três grandes blocos, quais sejam:
 
 1. Cabeçalho: local em que estão dispostos os elementos fixos da identidade (logomarca do site e links para o sistema interno do estacionamento, cadastro do cliente e login do cliente);
+<<<<<<< HEAD
    ![Exemplo de Wireframe](img/cabecalho.png)
    <br>
    <br>
@@ -25,10 +26,17 @@ As telas do sistema possuem uma estrutura padronizada, constituída de três gra
    ![Exemplo de Wireframe](img/conteudo.png)
    <br>
    <br>
+=======
+![Exemplo de Wireframe](img/cabecalho.png)
+<br>
+2. Conteúdo: local onde são apresentados campo de busca pelo endereço, mapa do local, estabelecimentos disponíveis, login e cadastro do cliente e do estacionamento;
+![Exemplo de Wireframe](img/conteudo.png)
+<br>
+>>>>>>> 4ca47009dde4ad929c292332e839d0618ac455bd
 3. Barra lateral: local onde fica barra de navegação para o cliente e para estacionamento.
-   ![Exemplo de Wireframe](img/menu.png)
-
-   São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+![Exemplo de Wireframe](img/menu.png)
+<br>
+São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
