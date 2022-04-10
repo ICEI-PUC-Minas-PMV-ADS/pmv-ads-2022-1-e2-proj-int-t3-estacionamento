@@ -1,23 +1,28 @@
-# TÍTULO DO PROJETO
-**Teste
-`CURSO`
-**Teste
-`DISCIPLINA`
+<img src="https://user-images.githubusercontent.com/88891675/162574437-6390dbc4-b2b8-406e-8db3-e70d5817255b.png" width=100%>
 
-`SEMESTRE`
+# WHY PARK
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`CURSO: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
+
+`DISCIPLINA: Projeto - Desenvolvimento de uma Aplicação Interativa`
+
+`SEMESTRE: 2022.1`
+
+O projeto consiste em desenvolver uma aplicação interativa para empresas de estacionamento e para seus clientes. Além de otimizar as atividades do estacionamento, estes poderão ser buscados pelo cliente que deseja estacionar o seu veículo. Essa busca será baseada na localização de ambos os atores e também de acordo com as vagas disponíveis. Assim, a escolha pelo cliente poderá ser feita de forma mais prática e rápida e a administração do estacionamento será mais eficiente, já que os usuários contarão com acesso via web e via app, interface de fácil interação, além de disponibilizar para o estacionamento a ferramenta de publicidade, dentro do sistema, para impulsionamento de suas redes sociais.  
+ 
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Flávia Cristina Gomes de Souza
+* Isabela Pinheiro Santos
+* Júlio Sergio Novaes Gomes
+* Paulo Henrique Costa Santos
+* Raphael Garcez Cordeiro Soares
 
 ## Orientador
 
-* Nome completo do professor 1
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 
@@ -48,3 +53,4 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+

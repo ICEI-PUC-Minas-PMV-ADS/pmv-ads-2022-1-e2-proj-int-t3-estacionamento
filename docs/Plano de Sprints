@@ -1,0 +1,10 @@
+Plano de Sprints
+
+No plano de sprints previsto para esta etapa, a equipe de desenvolvimento implementará, as seguintes funcionalidades:
+1.	Cadastro da empresa de estacionamento;
+2.	Cadastro pela empresa do número de vagas existentes no estacionamento;
+3.	Cadastro pela empresa dos valores por vaga do estacionamento, que poderá ser calculada por hora, dia ou mês;
+4.	Cadastro pela empresa das formas de pagamento que serão aceitas.
+
+Para esta implementação, serão utilizadas as ferramentas descritas na especificação do projeto, além de uma API REST com o respectivo endpoint de cadastro com persistência no banco de dados. As tecnologias utilizadas serão: C#, .net Framework e SQL com PostgresSQL como SGBD (sistema gerenciador de banco de dados). 
+
