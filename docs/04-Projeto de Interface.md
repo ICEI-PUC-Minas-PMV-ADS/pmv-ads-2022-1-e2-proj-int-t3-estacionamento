@@ -26,6 +26,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
+<<<<<<< HEAD
+=======
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
@@ -184,3 +186,4 @@ Serão mensurados durante o teste:
 -Eficiência do processo de interação com o sistema pelo gestor do - estacionamento;
 - Satisfação dos usuários ao realizar tais processos.
 <br>
+>>>>>>> 71eb4cd2a921a1096863efd03143878033e9b09d
