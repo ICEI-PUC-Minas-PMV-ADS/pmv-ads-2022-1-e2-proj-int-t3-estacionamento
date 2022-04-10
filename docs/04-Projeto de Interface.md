@@ -35,22 +35,7 @@ As telas do sistema possuem uma estrutura padronizada, constituída de três gra
 
    São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-<<<<<<< HEAD
-=======
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-<<<<<<< HEAD
-=======
->>>>>>> 8b98676f73912e27842e0939f766dc174ce2c0d9
-> **Links Úteis**:
->
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
 
 ## Plano de Testes de Software
 
@@ -201,9 +186,9 @@ Serão mensurados durante o teste:
 - Eficiência do processo de cadastro do estacionamento;
   -Eficiência do processo de interação com o sistema pelo gestor do - estacionamento;
 - Satisfação dos usuários ao realizar tais processos.
-<<<<<<< HEAD
+  <<<<<<< HEAD
   <br>
-=======
-<br>
->>>>>>> 71eb4cd2a921a1096863efd03143878033e9b09d
->>>>>>> 8b98676f73912e27842e0939f766dc174ce2c0d9
+  =======
+  <br>
+  > > > > > > > 71eb4cd2a921a1096863efd03143878033e9b09d
+  > > > > > > > 8b98676f73912e27842e0939f766dc174ce2c0d9
