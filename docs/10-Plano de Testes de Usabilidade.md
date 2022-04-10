@@ -1,11 +1,26 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
+O teste do usuário (ou teste de usabilidade) consiste em uma verificação da interface de uma plataforma digital, considerando a interação com o usuário.
+O objetivo do teste é observar as principais dificuldades no uso do sistema para assim ser possível realizar melhorias e, por consequência, proporcionar uma melhor experiência ao usuário.
+Para realização deste teste, serão utilizados Testes Remotos Não Moderados de Usabilidade como método, feitos de forma online. Os participantes dos testes efetuarão os estudos diretamente em seus próprios dispositivos, como tablets, smartphones e notebooks.
+Como diretriz principal do teste, serão observadas as dez heurísticas de Nielsen, quais sejam:
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+- Visibilidade do status do sistema;
+- Correspondência entre o sistema e o mundo real;
+- Liberdade e controle do usuário;
+- Consistência e padrões;
+- Prevenção de erros;
+- Reconhecer ao invés de lembrar;
+- Flexibilidade e Eficiência;
+- Estética e Design minimalista;
+- Auxiliar usuários a reconhecer, diagnosticar e recuperar erros;
+- Ajuda e Documentação.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Serão mensurados durante o teste:
+
+- Qualidade da navegação;
+- Eficiência do processo de busca por estacionamento;
+- Eficiência do processo de reserva do estacionamento;
+- Eficiência do processo de cadastro do estacionamento;
+  -Eficiência do processo de interação com o sistema pelo gestor do - estacionamento;
+- Satisfação dos usuários ao realizar tais processos.
