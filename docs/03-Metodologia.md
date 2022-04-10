@@ -8,8 +8,7 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+[Git](https://git-scm.com/), sendo que o [Github](https://github.com) foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
