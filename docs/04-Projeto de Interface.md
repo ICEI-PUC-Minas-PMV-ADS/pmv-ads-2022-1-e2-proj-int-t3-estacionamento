@@ -26,11 +26,10 @@ As telas do sistema possuem uma estrutura padronizada, constituída de três gra
 3. Barra lateral: local onde fica barra de navegação para o cliente e para estacionamento.
    ![Exemplo de Wireframe](img/menu.png)
 
-   São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-<<<<<<< HEAD
 ## Plano de Testes de Software
 
 A seguir serão apresentados os dados colhidos durante a execução do plano de testes de software conforme os cenários que se apresentarem no decorrer do desenvolvimento da aplicação.
@@ -180,12 +179,3 @@ Serão mensurados durante o teste:
 - Eficiência do processo de cadastro do estacionamento;
 - Eficiência do processo de interação com o sistema pelo gestor do estacionamento;
 - Satisfação dos usuários ao realizar tais processos.
-
-=======
-  <<<<<<< HEAD
-  <br>
-  =======
-  <br>
-  > > > > > > > 71eb4cd2a921a1096863efd03143878033e9b09d
-  > > > > > > > 8b98676f73912e27842e0939f766dc174ce2c0d9
->>>>>>> d2e2cd63cc1578b7f53b55d188d61d2bbce9b3bb
