@@ -19,10 +19,12 @@ As telas do sistema possuem uma estrutura padronizada, constituída de três gra
 
 1. Cabeçalho: local em que estão dispostos os elementos fixos da identidade (logomarca do site e links para o sistema interno do estacionamento, cadastro do cliente e login do cliente);
    ![Exemplo de Wireframe](img/cabecalho.png)
-
+   <br>
+   <br>
 2. Conteúdo: local onde são apresentados campo de busca pelo endereço, mapa do local, estabelecimentos disponíveis, login e cadastro do cliente e do estacionamento;
    ![Exemplo de Wireframe](img/conteudo.png)
-
+   <br>
+   <br>
 3. Barra lateral: local onde fica barra de navegação para o cliente e para estacionamento.
    ![Exemplo de Wireframe](img/menu.png)
 
