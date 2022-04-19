@@ -1,10 +1,6 @@
 # Projeto de Interface
 
-Pré-requisitos: [Documento de Contexto](01-Documenta%C3%A7%C3%A3o%20de%20Contexto.md)
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
-Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados no [Documento de Contexto](01-Documenta%C3%A7%C3%A3o%20de%20Contexto.md).
+A elaboração da interface do sistema prioriza a simplicidade foca em agilidade, acessibilidade e usabilidade. Assim, o projeto possui uma identidade visual padronizada em suas telas, que são projetadas para funcionamento em desktops e dispositivos móveis.
 
 ## Diagrama de Fluxo
 
