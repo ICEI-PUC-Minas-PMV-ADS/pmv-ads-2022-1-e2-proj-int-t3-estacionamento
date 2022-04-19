@@ -1,8 +1,6 @@
 # Arquitetura da Solução
 
-Pré-requisitos: [Projeto de Interface](01-Documentação%20de%20Contexto.md) 
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura da solução é a descrição de como a solução será estruturada pela equipe. Contém os detalhes técnicos da aplicação e trata dos componentes que fazem parte da solução e do ambiente em que está ficará hospedada.
 
 ## Diagrama de Classes
 
