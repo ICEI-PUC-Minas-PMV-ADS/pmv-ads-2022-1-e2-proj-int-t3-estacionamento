@@ -22,5 +22,5 @@ Serão mensurados durante o teste:
 - Eficiência do processo de busca por estacionamento;
 - Eficiência do processo de reserva do estacionamento;
 - Eficiência do processo de cadastro do estacionamento;
-  -Eficiência do processo de interação com o sistema pelo gestor do - estacionamento;
+- Eficiência do processo de interação com o sistema pelo gestor do - estacionamento;
 - Satisfação dos usuários ao realizar tais processos.
