@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using webWhyPark.Context;
 using webWhyPark.Models;
 using System;
+using System.Security.Claims;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -61,7 +62,7 @@ namespace webWhyPark.Controllers
 
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
-         public async Task<IActionResult> Create([Bind("Id,Nome,,Email,Senha")] CadastroCliente cadastroCli)
+         public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
         {
             if (ModelState.IsValid)
             {
@@ -97,6 +98,10 @@ namespace webWhyPark.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
         {
+            if (id != cadastroCli.Id)
+            {
+                return NotFound();
+            }
             if (ModelState.IsValid)
             {
 

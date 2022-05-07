@@ -5,7 +5,9 @@ using System.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace webWhyPark.Models {
-public class CadastroCliente {
+    public class CadastroCliente 
+    
+    {
 
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

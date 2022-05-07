@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - webWhyPark</title>
+    <title>@ViewData["Title"] - WhyPark</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/webWhyPark.styles.css" asp-append-version="true" />
@@ -26,11 +26,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Estacionamento" asp-action="Index"
-                                asp-action="Privacy">Estacionamentos</a>
+                                asp-action="Privacy">Estacionamento</a>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="CadastroCliente" asp-action="Index"
-                                asp-action="Privacy">Cadastro do Cliente</a>
+                            <button class="btn btn-outline-secondary btn-sm" type="button">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="CadastroCliente" asp-action="Index"
+                                asp-action="Privacy">Criar conta</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-secondary btn-sm" type="button">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="LoginCliente" asp-action="Index"
+                                asp-action="Privacy">Login</a>
+                            </button>
                         </li>
                     </ul>
                 </div>
