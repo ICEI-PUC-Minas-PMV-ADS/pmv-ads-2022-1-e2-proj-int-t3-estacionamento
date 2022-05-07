@@ -9,27 +9,26 @@ using System.Threading.Tasks;
 
 namespace webWhyPark.Controllers
 {
-    public class EstacionamentoController : Controller
+    public class CadastroClienteController : Controller
     {
+         private readonly ApplicationDbContext _context = null!;
 
-        private readonly ApplicationDbContext _context = null!;
 
-        //Constructor
-        public EstacionamentoController(ApplicationDbContext context)
+        //Construtor do Cadastro do Cliente no Contexto
+         public CadastroClienteController(ApplicationDbContext context)
         {
             if (context != null)
                 _context = context;
         }
 
-
-        //Index
-        //GET: Estacionamentos
+        //Index 
+        //GET: CadastroCliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Estacionamentos.ToListAsync());
+            return View(await _context.CadastroClientes.ToListAsync());
         }
 
-        //GET: Estacioanamentos/Details/2
+        //GET: CadastroClientes/Details/2
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -37,83 +36,78 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            //Recupera o estacionamento
+            //Recupera o Cliente
 
-            var estacionamento = await _context.Estacionamentos
+            var cadastroCli = await _context.CadastroClientes
                                 .FirstOrDefaultAsync(e => e.Id == id);
 
-            if (estacionamento == null)
+            if (cadastroCli == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(cadastroCli);
 
         }
 
+         //Criar rota do Cadastro do Cliente
+        //GET CadastroCliente/Create
 
-        //Criar estacionameto rota
-        //GET Estacionamento/Create
-
-        public IActionResult Create()
+         public IActionResult Create()
         {
             return View();
         }
-
-
+        
 
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionamento)
+         public async Task<IActionResult> Create([Bind("Id,Nome,,Email,Senha")] CadastroCliente cadastroCli)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(estacionamento);
+                _context.Add(cadastroCli);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View();
         }
 
+         //Recupera o CadastroCliente para editar
+        //GET: CadastroCliente/Edit/9
 
-        //Recupera o estacionamento para editar
-        //GET: Estacionamento/Edit/9
-
-        public async Task<IActionResult> Edit(int? id)
+         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var estacionamento = await _context.Estacionamentos.FindAsync(id);
+            var cadastroCli = await _context.CadastroClientes.FindAsync(id);
 
-            if (estacionamento == null)
+            if (cadastroCli == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(cadastroCli);
         }
 
-        //POST Estacionamento/Delete/5
+        //POST CadastroCliente/Delete/5
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
         {
             if (ModelState.IsValid)
             {
 
                 try
                 {
-                    _context.Estacionamentos.Update(estacionamento);
+                    _context.CadastroClientes.Update(cadastroCli);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EstacionamentoExists(id))
+                    if (!CadastroClienteExists(id))
                     {
                         return NotFound();
                     }
@@ -125,13 +119,11 @@ namespace webWhyPark.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(estacionamento);
+            return View(cadastroCli);
         }
 
-
-        //Recupera o estacionamento para deletar
-        //GET: Estacionamento/Edit/9
-
+        //Recupera o CadastroCliente para deletar
+        //GET: CadastroCliente/Edit/9
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -139,33 +131,33 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var estacionamento = await _context.Estacionamentos
+            var cadastroCli = await _context.CadastroClientes
                                 .FirstOrDefaultAsync(d => d.Id == id);
 
-            if (estacionamento == null)
+            if (cadastroCli == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(cadastroCli);
         }
 
-        //POST Estacionamento/Delete/5
+         //POST CadastroCliente/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-
-
         public async Task<IActionResult> Delete(int id)
         {
-            var estacionamento = await _context.Estacionamentos.FindAsync(id);
-            _context.Estacionamentos.Remove(estacionamento!);
+            var cadastroCli = await _context.CadastroClientes.FindAsync(id);
+            _context.CadastroClientes.Remove(cadastroCli!);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        public bool EstacionamentoExists(int id)
+        public bool CadastroClienteExists(int id)
         {
-            return _context.Estacionamentos.Any(e => e.Id == id);
+            return _context.CadastroClientes.Any(e => e.Id == id);
         }
+
+
+
     }
 }
