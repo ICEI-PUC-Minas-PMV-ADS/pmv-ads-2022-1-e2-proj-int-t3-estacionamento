@@ -15,55 +15,55 @@ namespace webWhyPark.Controllers
 {
     public class LoginClienteController : Controller
     {
-         private readonly ApplicationDbContext _context = null!;
+        private readonly ApplicationDbContext _context = null!;
 
 
         //Construtor do Login do Cliente no Contexto
-         public LoginClienteController(ApplicationDbContext context)
+        public LoginClienteController(ApplicationDbContext context)
         {
             if (context != null)
                 _context = context;
         }
 
-         //Criar rota do Login do Cliente
-        
+        //Criar rota do Login do Cliente
+
         //GET LoginCliente/Login
-         public IActionResult Login()
+        public IActionResult Login()
         {
             return View();
         }
-        
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-         public async Task<IActionResult> Login([Bind("Email,Senha")] LoginCliente loginCliente)
+        public async Task<IActionResult> Login([Bind("Email,Senha")] CadastroCliente cadastroCliente)
         {
-            var loginCli = await _context.LoginClientes
-                .FirstOrDefaultAsync(m => m.Id == loginCliente.Id);
-            
-                if (loginCli == null)
-                {
-                    ViewBag.message = "Usuário e/ou senha inválidos.";
-                    return View();
-                }
-
-            //bool senhaCorreta = BCrypt.Net.BCrypt.Verify(loginCliente.Senha, loginCli.Senha);
-            bool senhaCorreta = true;
-            
-            if (senhaCorreta) 
+            var loginCli = await _context.CadastroClientes
+                .FirstOrDefaultAsync(m => m.Email == cadastroCliente.Email);
+            Console.WriteLine(loginCli);
+            Console.WriteLine(cadastroCliente.Senha);
+            if (loginCli == null)
             {
-            var claims = new List<Claim>
-                        
+                ViewBag.message = "Usuário e/ou senha inválidos.";
+                return View();
+            }
+
+            bool senhaCorreta = BCrypt.Net.BCrypt.Verify(cadastroCliente.Senha, loginCli.Senha);
+
+            if (senhaCorreta)
+            {
+                var claims = new List<Claim>
+
                 {
                     new Claim(ClaimTypes.Name, loginCli.Email),
                     new Claim(ClaimTypes.NameIdentifier, loginCli.Email)
                 };
 
-            var loginIdentity = new ClaimsIdentity(claims, "login");
+                var loginIdentity = new ClaimsIdentity(claims, "login");
 
                 ClaimsPrincipal principal = new ClaimsPrincipal(loginIdentity);
 
-            var props = new AuthenticationProperties
+                var props = new AuthenticationProperties
                 {
                     AllowRefresh = true,
                     ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
@@ -93,7 +93,7 @@ namespace webWhyPark.Controllers
         //Get: LoginCliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.LoginClientes.ToListAsync());
+            return View(await _context.CadastroClientes.ToListAsync());
         }
 
         //Get: LoginCliente/Details
@@ -104,13 +104,13 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-        var loginCli = await _context.LoginClientes
-            .FirstOrDefaultAsync(m => m.Id == id);
-            if (loginCli == null) 
+            var loginCli = await _context.CadastroClientes
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (loginCli == null)
             {
                 return NotFound();
             }
-            return View (loginCli);
+            return View(loginCli);
         }
 
 

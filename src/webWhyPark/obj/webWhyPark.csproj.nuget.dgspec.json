@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {}
+    "E:\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {
+    "E:\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+        "projectUniqueName": "E:\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
         "projectName": "webWhyPark",
-        "projectPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
+        "projectPath": "E:\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+        "packagesPath": "C:\\Users\\T-Gamer\\.nuget\\packages\\",
+        "outputPath": "E:\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\T-Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -59,6 +55,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Caching.SqlServer": {
               "target": "Package",
               "version": "[6.0.4, )"
             }

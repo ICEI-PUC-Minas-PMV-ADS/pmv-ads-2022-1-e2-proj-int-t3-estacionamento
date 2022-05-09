@@ -12,11 +12,11 @@ namespace webWhyPark.Controllers
 {
     public class CadastroClienteController : Controller
     {
-         private readonly ApplicationDbContext _context = null!;
+        private readonly ApplicationDbContext _context = null!;
 
 
         //Construtor do Cadastro do Cliente no Contexto
-         public CadastroClienteController(ApplicationDbContext context)
+        public CadastroClienteController(ApplicationDbContext context)
         {
             if (context != null)
                 _context = context;
@@ -51,21 +51,22 @@ namespace webWhyPark.Controllers
 
         }
 
-         //Criar rota do Cadastro do Cliente
+        //Criar rota do Cadastro do Cliente
         //GET CadastroCliente/Create
 
-         public IActionResult Create()
+        public IActionResult Create()
         {
             return View();
         }
-        
+
 
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
-         public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
         {
             if (ModelState.IsValid)
             {
+                cadastroCli.Senha = BCrypt.Net.BCrypt.HashPassword(cadastroCli.Senha, BCrypt.Net.SaltRevision.Revision2B);
                 _context.Add(cadastroCli);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -73,10 +74,10 @@ namespace webWhyPark.Controllers
             return View();
         }
 
-         //Recupera o CadastroCliente para editar
+        //Recupera o CadastroCliente para editar
         //GET: CadastroCliente/Edit/9
 
-         public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -147,7 +148,7 @@ namespace webWhyPark.Controllers
             return View(cadastroCli);
         }
 
-         //POST CadastroCliente/Delete/5
+        //POST CadastroCliente/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
