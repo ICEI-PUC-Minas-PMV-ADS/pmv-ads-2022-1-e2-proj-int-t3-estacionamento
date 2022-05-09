@@ -1,0 +1,16 @@
+Backlog
+        	As principais entregas do projeto estão descritas abaixo, por ordem de prioridade:
+1.	Cadastro da empresa de estacionamento;
+2.	Cadastro pela empresa do número de vagas existentes no estacionamento;
+3.	Cadastro pela empresa dos valores por vaga do estacionamento, que poderá ser calculada por hora, dia ou mês;
+4.	Cadastro pela empresa das formas de pagamento que serão aceitas;
+5.	Possibilidade de o cliente do estacionamento informar a sua localização no momento da busca por vaga;
+6.	Busca pelo cliente por estacionamentos próximos à localização informada;
+7.	Visualização pelo cliente dos estacionamentos próximos, com vagas disponíveis;
+8.	Possibilidade de o cliente selecionar o estabelecimento escolhido para indicar o interesse por uma vaga;
+9.	Cadastro do cliente que irá utilizar o estacionamento;
+10.	 Interface para o manobrista do estacionamento visualizar vagas disponíveis e ocupadas;
+11.	Interface para o manobrista lançar no sistema do estacionamento as vagas ocupadas pelo cliente que não acessou o estacionamento via aplicativo;
+12.	Interface para o manobrista visualizar o tempo de ocupação das vagas e calcular o valor do serviço para cada cliente;
+13.	Conexão com as redes sociais do estabelecimento como forma de dar maior publicidade ao negócio. 
+ 

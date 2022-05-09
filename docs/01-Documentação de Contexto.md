@@ -1,46 +1,26 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+<p>De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), o Brasil contabilizou, em 2020, cerca de 58 milhões de automóveis e 23 mihões de motocicletas. Um cálculo realizado pela UNESP aponta que, em média, os veículos ficam em movimento apenas 11% do tempo, permacendo parados, portando, na maior parte do tempo (cerca de 89%). Assim, a demanda por estacionamentos é grande e torna-se necessário melhorar a oferta de vagas, principalmente em áreas com grandes concentrações de atividades.</p> 
+<p>Assim, o sistema Why Park consiste em uma aplicação interativa de um estacionamento, que auxilia o cliente a encontrar o estacionamento cadastrado mais próximo do lugar em que ele se encontra, podendo fazer reserva de vaga remotamente. Os usuários do sistema são: o dono da empresa de estacionamento (gestor), o manobrista da empresa e o cliente que utilizará uma vaga disponível para estacionar o seu veículo.</p>
+<p>Será apresentada uma solução para o gerente, que poderá fazer o cadastro da sua empresa no sistema da aplicação interativa. Nesse cadastro serão inseridas todas as informações relevantes, tais como: endereço do estabelecimento, número de vagas existentes, vagas reservadas para mensalistas ou diaristas, valor do estacionamento por hora, dia ou mês e formas de pagamento que poderão ser aceitas. Além disso, por meio deste sistema será possível que a empresa visualize as vagas disponíveis, faça o lançamento das vagas que estão ocupadas, contabilize o tempo de ocupação das vagas e calcule valor total do serviço para cada cliente. Esta parte operacional do sistema ficará a cargo do manobrista. Assim, a empresa poderá fazer um controle de todas as atividades do estacionamento.</p>
+<p>Também será apresentada uma solução para o cliente que deseja estacionar seu veículo em um estacionamento privado. O cliente poderá realizar uma busca do estacionamento mais próximo do endereço informado por ele. A busca poderá retornar um ou mais estabelecimentos, mostrar o número de vagas disponíveis e os valores cobrados por cada empresa. O cliente poderá também se cadastrar no sistema da aplicação interativa, para assim poder receber eventuais notificações e cadastrar cartão para pagamento.</p>
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+<p>O problema que se busca suprir com o presente projeto é a ausência de um sistema moderno e prático para empresas de estacionamento, assim como a ausência de uma interface virtual entre estas empresas e o cliente que deseja estacionar seu veículo.</p>
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+<p>O objetivo geral da aplicação é desenvolver um aplicativo / software para atender estacionamento bem como seus usuários, e tornar mais eficiente a forma como são ofertadas as vagas em estacionamentos privados. 
+<p>Os objetivos específicos do Why Park são:<br>
+- Informatizar o sistema de controle de estacionamentos e ao mesmo tempo promover estas empresas on-line, uma vez que o cliente, ao buscar no site um local para estacionar seu veículo, poderá visualizar as empresas cadastradas no sistema;<br>
+- Promover comodidade e facilidade para o cliente de estacionamentos, pois o sistema o informará previamente sobre todas as opções de empresas que tenham vagas disponíveis e que sejam próximas ao endereço informado.<br></p>
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+<p>Atualmente, existe apenas uma aplicação no mercado com as funcionalidades semelhantes as do Why Park, atuante somente no estado de São Paulo, e outros sistemas com funções limitadas.</p>
+<p>Assim, este projeto visa ser uma opção inicialmente para a cidade de Belo Horizonte e Região Metropolitana, criando um aplicativo com recursos interativos entre cliente e estacionamento, que proporciona uma maior usabilidade para o cliente e torna mais simples e automatizada a gestão do estacionamento. Percebe-se a ausência de mecanismos que poderiam melhorar os sistemas de estacionamento tais como: um sistema mais inteligente, um processo de checkout mais eficiente na hora do pagamento, o contato entre empresa e cliente sendo feito previamente em ambiente virtual, de forma ágil e prática, dentre outros. </p>
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+<p>O público-alvo deste sistema interativo são: as empresas de estacionamento e as pessoas que desejam estacionar o seu veículo em um estacionamento privado.</p>
