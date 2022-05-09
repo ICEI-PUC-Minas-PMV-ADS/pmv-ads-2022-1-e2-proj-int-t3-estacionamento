@@ -23,7 +23,7 @@ namespace webWhyPark.Controllers
 
 
         //Index
-        //GET: Estacioanamentos
+        //GET: Estacionamentos
         public async Task<IActionResult> Index()
         {
             return View(await _context.Estacionamentos.ToListAsync());
@@ -65,11 +65,11 @@ namespace webWhyPark.Controllers
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionameto)
+        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(estacionameto);
+                _context.Add(estacionamento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -97,7 +97,7 @@ namespace webWhyPark.Controllers
             return View(estacionamento);
         }
 
-        //POST Alunos/Delete/5
+        //POST Estacionamento/Delete/5
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
 
