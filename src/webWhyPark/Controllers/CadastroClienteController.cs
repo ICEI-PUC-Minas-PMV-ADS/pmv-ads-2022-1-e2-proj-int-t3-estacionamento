@@ -26,7 +26,7 @@ namespace webWhyPark.Controllers
         //GET: CadastroCliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.CadastroClientes.ToListAsync());
+            return View(await _context.Clientes.ToListAsync());
         }
 
         //GET: CadastroClientes/Details/2
@@ -39,7 +39,7 @@ namespace webWhyPark.Controllers
 
             //Recupera o Cliente
 
-            var cadastroCli = await _context.CadastroClientes
+            var cadastroCli = await _context.Clientes
                                 .FirstOrDefaultAsync(e => e.Id == id);
 
             if (cadastroCli == null)
@@ -62,7 +62,7 @@ namespace webWhyPark.Controllers
 
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] Cliente cadastroCli)
         {
             if (ModelState.IsValid)
             {
@@ -84,7 +84,7 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var cadastroCli = await _context.CadastroClientes.FindAsync(id);
+            var cadastroCli = await _context.Clientes.FindAsync(id);
 
             if (cadastroCli == null)
             {
@@ -97,7 +97,7 @@ namespace webWhyPark.Controllers
         //POST CadastroCliente/Delete/5
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha")] CadastroCliente cadastroCli)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha")] Cliente cadastroCli)
         {
             if (id != cadastroCli.Id)
             {
@@ -108,7 +108,7 @@ namespace webWhyPark.Controllers
 
                 try
                 {
-                    _context.CadastroClientes.Update(cadastroCli);
+                    _context.Clientes.Update(cadastroCli);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -137,7 +137,7 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var cadastroCli = await _context.CadastroClientes
+            var cadastroCli = await _context.Clientes
                                 .FirstOrDefaultAsync(d => d.Id == id);
 
             if (cadastroCli == null)
@@ -153,14 +153,14 @@ namespace webWhyPark.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            var cadastroCli = await _context.CadastroClientes.FindAsync(id);
-            _context.CadastroClientes.Remove(cadastroCli!);
+            var cadastroCli = await _context.Clientes.FindAsync(id);
+            _context.Clientes.Remove(cadastroCli!);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
         public bool CadastroClienteExists(int id)
         {
-            return _context.CadastroClientes.Any(e => e.Id == id);
+            return _context.Clientes.Any(e => e.Id == id);
         }
 
 

@@ -1,12 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using webWhyPark.Context;
+using DotNetEnv;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
+DotNetEnv.Env.Load();
+var sqlConnection = Environment.GetEnvironmentVariable("URL_DATABASE");
+Console.WriteLine("aqui ", sqlConnection);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
-optios.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+optios.UseSqlServer(connectionString: sqlConnection!)
 );
 
 

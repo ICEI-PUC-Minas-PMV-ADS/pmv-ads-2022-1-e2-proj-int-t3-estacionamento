@@ -15,8 +15,7 @@ namespace webWhyPark.Context
         public DbSet<Estacionamento> Estacionamentos { get; set; } = null!;
         public DbSet<Endereco> Enderecos { get; set; } = null!;
         public DbSet<RedeSocial> RedesSociais { get; set; } = null!;
-        public DbSet<CadastroCliente> CadastroClientes {get; set;} = null!;
-        public DbSet<LoginCliente> LoginClientes {get; set;} = null!;
+        public DbSet<Cliente> Clientes { get; set; } = null!;
 
 
     }

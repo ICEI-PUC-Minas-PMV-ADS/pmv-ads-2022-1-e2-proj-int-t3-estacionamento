@@ -36,19 +36,19 @@ namespace webWhyPark.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Bind("Email,Senha")] CadastroCliente cadastroCliente)
+        public async Task<IActionResult> Login([Bind("Email,Senha")] Cliente cliente)
         {
-            var loginCli = await _context.CadastroClientes
-                .FirstOrDefaultAsync(m => m.Email == cadastroCliente.Email);
+            var loginCli = await _context.Clientes
+                .FirstOrDefaultAsync(m => m.Email == cliente.Email);
             Console.WriteLine(loginCli);
-            Console.WriteLine(cadastroCliente.Senha);
+            Console.WriteLine(cliente.Senha);
             if (loginCli == null)
             {
                 ViewBag.message = "Usuário e/ou senha inválidos.";
                 return View();
             }
 
-            bool senhaCorreta = BCrypt.Net.BCrypt.Verify(cadastroCliente.Senha, loginCli.Senha);
+            bool senhaCorreta = BCrypt.Net.BCrypt.Verify(cliente.Senha, loginCli.Senha);
 
             if (senhaCorreta)
             {
@@ -93,7 +93,7 @@ namespace webWhyPark.Controllers
         //Get: LoginCliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.CadastroClientes.ToListAsync());
+            return View(await _context.Clientes.ToListAsync());
         }
 
         //Get: LoginCliente/Details
@@ -104,7 +104,7 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var loginCli = await _context.CadastroClientes
+            var loginCli = await _context.Clientes
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (loginCli == null)
             {

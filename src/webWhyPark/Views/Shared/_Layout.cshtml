@@ -8,55 +8,51 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/webWhyPark.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light   box-shadow "
+            style="background-color: #000000;">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WhyPark</a>
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">WhyPark</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Estacionamento" asp-action="Index"
-                                asp-action="Privacy">Estacionamento</a>
+
                     </ul>
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto mx-2 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-secondary btn-sm" type="button">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="CadastroCliente" asp-action="Index"
-                                asp-action="Privacy">Criar conta</a>
-                            </button>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Estacionamento"
+                                asp-action="Index" asp-action="Privacy">Estacionamento</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light px-4" asp-area="" asp-controller="CadastroCliente"
+                                asp-action="Index" asp-action="Privacy">Criar conta</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary btn-sm" type="button">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="LoginCliente" asp-action="Index"
+                            <a class="nav-link text-light rounded border-2 btn btn-primary bg-transparent border-white px-4"
+                                asp-area="" asp-controller="LoginCliente" asp-action="Index"
                                 asp-action="Privacy">Login</a>
-                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - webWhyPark - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="footer text-muted p-0 m-0">
+        <p> &copy; 2022 - webWhyPark - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -183,3 +183,7 @@ E:\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\obj\Debug\net6.0\
 E:\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\obj\Debug\net6.0\ref\webWhyPark.dll
 E:\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\Microsoft.Extensions.Caching.SqlServer.dll
 E:\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\BCrypt.Net-Core.dll
+C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\BCrypt.Net-Core.dll
+C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\Microsoft.Extensions.Caching.SqlServer.dll
+C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\DotNetEnv.dll
+C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\bin\Debug\net6.0\Sprache.dll
