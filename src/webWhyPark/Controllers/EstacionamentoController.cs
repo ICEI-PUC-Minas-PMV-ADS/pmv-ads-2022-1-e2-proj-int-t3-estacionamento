@@ -153,8 +153,6 @@ namespace webWhyPark.Controllers
         //POST Estacionamento/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-
-
         public async Task<IActionResult> Delete(int id)
         {
             var estacionamento = await _context.Estacionamentos.FindAsync(id);
