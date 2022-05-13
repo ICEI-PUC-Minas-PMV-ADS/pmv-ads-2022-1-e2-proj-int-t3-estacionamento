@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1llViD/1OlVFTP1+L2dS2UsrRZo/htKea0ejyOVDVoQ=",
+  "Hash": "pPh34Vi5aPpJS9/Kxrd68FUF6ccYsmTXMu1xOdAxwWg=",
   "Source": "webWhyPark",
   "BasePath": "_content/webWhyPark",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\home.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\parking-animate.svg",
+      "SourceId": "webWhyPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\",
+      "BasePath": "_content/webWhyPark",
+      "RelativePath": "imagens/parking-animate.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\parking-animate.svg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\js\\site.js",
