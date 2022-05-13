@@ -1,12 +1,63 @@
 @model IEnumerable<webWhyPark.Models.Estacionamento>
 @{
     ViewData["Title"] = "Estacionamentos";
+
+<style scoped>
+
+body {
+    background-color: lightgray;
 }
 
-<p>
-    <a asp-action="Create">Cadastre seu estacionamento!</a>
-</p>
+.card-deck {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.card {
+    padding: 1px 1px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0;
+}
 
+.card-img-top {
+    width: 100%;
+    height: 80%;
+}
+
+.card-title {
+    font-weight: 800;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+</style>
+
+}
+
+<body>
+
+<div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="/../imagens/estacionamento.svg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a asp-action="Create">Cadastre seu estacionamento!</a></h5>
+                </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="/../imagens/entrarEstacionamento.svg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a asp-action="#">Entre na sua conta</a></h5>
+                </div>
+        </div>
+</div>
+
+</body>
+<br>
+<br>
 <div>
 
     <table class="table">
