@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pPh34Vi5aPpJS9/Kxrd68FUF6ccYsmTXMu1xOdAxwWg=",
+  "Hash": "sbKZAgMjnIdB3ER02xUbCWehhpjntL+MqoDj4kZ0x/U=",
   "Source": "webWhyPark",
   "BasePath": "_content/webWhyPark",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\cadastroCliente.svg",
+      "SourceId": "webWhyPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\",
+      "BasePath": "_content/webWhyPark",
+      "RelativePath": "imagens/cadastroCliente.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\cadastroCliente.svg"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\carro.svg",
       "SourceId": "webWhyPark",
       "SourceType": "Discovered",
@@ -100,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\carro.svg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\entrarEstacionamento.svg",
+      "SourceId": "webWhyPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\",
+      "BasePath": "_content/webWhyPark",
+      "RelativePath": "imagens/entrarEstacionamento.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\entrarEstacionamento.svg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\estacionamento.svg",
+      "SourceId": "webWhyPark",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\",
+      "BasePath": "_content/webWhyPark",
+      "RelativePath": "imagens/estacionamento.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\estacionamento.svg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\wwwroot\\imagens\\home.jpg",
