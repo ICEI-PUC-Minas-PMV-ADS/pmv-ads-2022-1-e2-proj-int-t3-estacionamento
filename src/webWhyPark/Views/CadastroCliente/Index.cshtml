@@ -1,0 +1,54 @@
+@model IEnumerable<webWhyPark.Models.Cliente>
+@{
+    ViewData["Title"] = "Clientes Cadastrados";
+}
+
+<p>
+    <a asp-action="Create">Faça o seu cadastro em nosso site!</a>
+</p>
+
+<div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model=>model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model=>model.Email)
+
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model=>model.Senha)
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem=>item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem=>item.Email)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem=>item.Senha)
+
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

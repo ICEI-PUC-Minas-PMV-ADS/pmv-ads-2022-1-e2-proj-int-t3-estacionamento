@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = webWhyPark
+build_property.RootNamespace = webWhyPark
+build_property.ProjectDir = C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\julsergion\Desktop\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\src\webWhyPark
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/CadastroCliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/CadastroCliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/CadastroCliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/CadastroCliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Estacionamento/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWNpb25hbWVudG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Estacionamento/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWNpb25hbWVudG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Estacionamento/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWNpb25hbWVudG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Estacionamento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWNpb25hbWVudG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/LoginCliente/AcessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DbGllbnRlXEFjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/LoginCliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DbGllbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/LoginCliente/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DbGllbnRlXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julsergion/Desktop/pmv-ads-2022-1-e2-proj-int-t3-estacionamento/src/webWhyPark/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ikk9h620ef
