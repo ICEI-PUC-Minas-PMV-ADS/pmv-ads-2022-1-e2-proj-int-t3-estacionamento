@@ -6358,25 +6358,41 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\julsergion\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+>>>>>>> f0abb4eddd04833172152f273ecff5a0dbe40021
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\julsergion\\Desktop\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
       "projectName": "webWhyPark",
       "projectPath": "C:\\Users\\julsergion\\Desktop\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
       "packagesPath": "C:\\Users\\julsergion\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\julsergion\\Desktop\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+      "projectName": "webWhyPark",
+      "projectPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
+>>>>>>> f0abb4eddd04833172152f273ecff5a0dbe40021
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\julsergion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> f0abb4eddd04833172152f273ecff5a0dbe40021
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
