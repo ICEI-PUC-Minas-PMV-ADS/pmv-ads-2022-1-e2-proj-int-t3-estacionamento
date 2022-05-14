@@ -28,10 +28,25 @@ body {
 .card-title {
     font-weight: 800;
     margin: 0;
-    text-decoration: none;
     text-align: center;
-
 }
+
+.card-title > a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-title > a:hover {
+    background: lightgray;
+}
+
+.cart-title > h5 {
+    color: black;
+}
+
+
+
+
 
 </style>
 
@@ -40,17 +55,17 @@ body {
 <body>
 
 <div class="card-deck">
-        <div class="card">
+        <div class="card" style="width: 20rem;">
             <img class="card-img-top" src="/../imagens/estacionamento.svg" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title"><a asp-action="Create">Cadastre seu estacionamento!</a></h5>
+                    <h4 class="card-title"><a asp-action="Create">Cadastre seu estacionamento!</a></h4>
                 </div>
         </div>
 
         <div class="card">
             <img class="card-img-top" src="/../imagens/entrarEstacionamento.svg" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title"><a asp-action="#">Entre na sua conta</a></h5>
+                    <h4 class="card-title"><a asp-action="#">Entre na sua conta</a></h4>
                 </div>
         </div>
 </div>
