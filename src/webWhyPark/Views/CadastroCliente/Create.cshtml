@@ -5,9 +5,19 @@
 
 
     <style scoped>
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: #3f3c3c;
+            box-sizing: border-box;
+        }
+
         .main-cadastro {
-            width: 100%;
-            height: calc(100vh - 40px);
+            width: 100vw;
+            height: 100vw;
             background: rgb(63, 60, 60);
             display: flex;
             justify-content: center;
@@ -100,11 +110,10 @@
 }
 
 
-<body style="height: 100vh;">
+<body>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center h-10 bg-dark "
-        style="height:calc(100vh - 40px)">
-        <div class="w-100 p-4">
+    <div class="main-cadastro">
+        <div class="left-cadastro text-center">
             <h1>Falta pouco para estacionar o seu carro.<br>Faça seu cadastro!</h1>
             <img src="/../imagens/cadastroCliente.svg" class="left-cadastro-image" alt="cadastre-se">
         </div>
