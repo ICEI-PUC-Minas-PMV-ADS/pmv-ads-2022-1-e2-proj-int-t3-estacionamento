@@ -16,7 +16,7 @@
 
         .main-cadastro {
             width: 100vw;
-            height: 100vw;
+            max-height: calc(100vh - 100px);
             background: rgb(63, 60, 60);
             display: flex;
             justify-content: center;
@@ -25,7 +25,6 @@
 
         .left-cadastro {
             width: 50vw;
-            height: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,7 +38,6 @@
 
         .right-cadastro {
             width: 50vw;
-            height: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -113,14 +111,14 @@
 
     <div class="main-cadastro">
         <div class="left-cadastro text-center">
-            <h1>Falta pouco para estacionar o seu carro.<br>Faça seu cadastro!</h1>
+            <h1 class="mt-4">Falta pouco para estacionar o seu carro.<br>Faça seu cadastro!</h1>
             <img src="/../imagens/cadastroCliente.svg" class="left-cadastro-image" alt="cadastre-se">
         </div>
 
         <div class="right-cadastro ">
             <div class="card-cadastro-cliente">
                 <h1>Cadastre-se</h1>
-                <form asp-action="Create">
+                <form asp-action="Create" class="w-75">
                     <div asp-validation-summary="ModelOnly" class="text-danger">
                     </div>
 
@@ -135,14 +133,14 @@
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Senha" class="control-label"></label>
+                        <label asp-for="Senha" class="control-label w-100"></label>
                         <input asp-for="Senha" type="password" class="form-control" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a class="btn-cadastro-cliente" asp-controller="Home" asp-action="Index">Voltar</a>
-                        <input type="submit" value="Cadastrar" class="btn-cadastro-cliente" />
+                        @* <a class="btn-cadastro-cliente" asp-controller="Home" asp-action="Index">Voltar</a> *@
+                        <input type="submit" value="Cadastrar" class="btn-cadastro-cliente mt-3 " />
                     </div>
                 </form>
             </div>
