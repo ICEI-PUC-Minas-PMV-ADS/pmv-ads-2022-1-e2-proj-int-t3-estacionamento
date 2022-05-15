@@ -18,4 +18,4 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 A aplicação e o banco de dados utilizam o serviço de hospedagem Microsoft Azure. O deploy da aplicação foi realizado por meio de submssisão do código-fonte via associação do repositório remoto(Git Hub) e concesessão de autorizações para o servidor Azure.
 Utilizando a assinatura de estudante, foi possível criar um servidor windows para hospedar a aplicação e manter online o banco de dados utilizando o SQL server como sistema gerenciador.
-A aplicação encontra-se online no ambiente da URL: .....
+A aplicação encontra-se online no ambiente da URL: https://whypark.azurewebsites.net
