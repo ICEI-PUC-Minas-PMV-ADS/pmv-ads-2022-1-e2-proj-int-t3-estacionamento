@@ -5,18 +5,17 @@
 
 <style scoped>
 
-* {
+.body {
     margin: 0;
 }
 
-body {
-    background: #3f3c3c;
-    box-sizing: border-box;
+body * {
+    background: #3f3c3c; 
 }
 
 .main-form {
     width: 100vw;
-    height: 100vw;
+    max-height: calc(100vh - 100px);
     background: rgb(63, 60, 60);
     display: flex;
     justify-content: center;
@@ -25,7 +24,6 @@ body {
 
 .form-left {
     width: 50vw;
-    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +37,6 @@ body {
 
 .form-right {
     width: 50vw;
-    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +101,11 @@ body {
     background: lightgray;
     cursor: pointer;
     box-shadow: 0px 10px 4px -12px #0000005a;
+    white-space: normal;
+}
+
+.form-left-img {
+    height:520px;
 }
 
 </style>
@@ -115,7 +117,7 @@ body {
 
     <div class="form-left">
         <h1>Cadastre o seu estacionamento!</h1>
-            <img src="/../imagens/parking-animate.svg" alt="estacionamento">
+            <img src="/../imagens/parking-animate.svg" class="form-left-img" alt="estacionamento">
     </div>
 
     <div class="form-right">
@@ -147,7 +149,7 @@ body {
         </div>
 
         <div class= "d-grid gap-2 d-md-flex justify-content-md-end">
-             <a class="btn-cadastro" asp-action="Index">Voltar</a>
+            @* <a class="btn-cadastro" asp-action="Index">Voltar</a> *@
             <input type="submit" value="Cadastrar" class="btn-cadastro" />
         </div>
 
@@ -156,6 +158,7 @@ body {
 </div>
 
 </body>
+
 
 @section Scripts{
 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

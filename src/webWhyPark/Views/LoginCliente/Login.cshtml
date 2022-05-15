@@ -15,7 +15,7 @@ body * {
 
 .main-login {
     width: 100vw;
-    height: 100v;
+    height: 100vh;
     background: rgb(63, 60, 60);
     display: flex;
     justify-content: center;
@@ -100,12 +100,13 @@ body * {
     color: black;
     background: lightgray;
     cursor: pointer;
-    box-shadow: 0px 10px 4px -12px #0000005a;
+    box-shadow: 0px 10px 4px -12px #0000005a;  
 }
 
 .left-login-image{
     height:520px;
 }
+
 </style>
 }
 
@@ -120,7 +121,8 @@ body * {
         <div class = "card-login">
             <h1 class="fs-1">Login</h1>
             <form asp-action="Login" class="w-75">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger">
+                    </div>
                 <div class="textfield">
                     <label asp-for="Email" class="control-label"></label>
                     <input asp-for="Email"/>

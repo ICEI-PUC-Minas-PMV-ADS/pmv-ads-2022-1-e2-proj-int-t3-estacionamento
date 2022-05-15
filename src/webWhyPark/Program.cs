@@ -8,18 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 DotNetEnv.Env.Load();
 var sqlConnection = Environment.GetEnvironmentVariable("URL_DATABASE");
 Console.WriteLine("Servidor rodando");
-builder.services.AddCors();
-var kew = Encoding.ASCII.GetBytes(Settings.Secret);
+//builder.services.AddCors();
+//var kew = Encoding.ASCII.GetBytes(Settings.Secret);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
 optios.UseSqlServer(connectionString: sqlConnection!)
 
 );
 
-
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
