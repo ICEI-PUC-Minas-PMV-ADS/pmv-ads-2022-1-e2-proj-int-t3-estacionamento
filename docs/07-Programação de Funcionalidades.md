@@ -16,6 +16,6 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 ## Deploy e Hospedagem
 
-A aplicação e o banco de dados (SQL Server) utilizam o serviço de hospedagem Microsoft Azure. O deploy da aplicação foi realizado por meio de submssisão do código-fonte via associação do repositório remoto(Git Hub) e concesessão de autorizações.
-Vale frisar que o azure necessita da autorização da organização "ICEI-PUC-Minas-PMV-ADS" para acessar o repositório do projeto. Como a requisição não foi aceita até este dia da entrega, o deploy foi realizado através de um "fork" do repositório original.
-A aplicação encontra-se online vinculada ao banco de dados também online no ambiente da URL: .....
+A aplicação e o banco de dados utilizam o serviço de hospedagem Microsoft Azure. O deploy da aplicação foi realizado por meio de submssisão do código-fonte via associação do repositório remoto(Git Hub) e concesessão de autorizações para o servidor Azure.
+Utilizando a assinatura de estudante, foi possível criar um servidor windows para hospedar a aplicação e manter online o banco de dados utilizando o SQL server como sistema gerenciador.
+A aplicação encontra-se online no ambiente da URL: .....
