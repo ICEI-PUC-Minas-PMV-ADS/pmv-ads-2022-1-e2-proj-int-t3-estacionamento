@@ -1,8 +1,8 @@
-Registro de testes de software
+# Registro de testes de software
 
 O relatório a seguir apresenta os testes realizados pela equipe baseado no plano de testes de software descrito no item 8 da documentação do projeto.
 
-1 – Cadastrar cliente do estacionamento 
+## 1 – Cadastrar cliente do estacionamento 
 
 1.1 Após acessar o site através do navegador conectado à internet, o usuário seleciona a opção “criar conta”:
 
@@ -28,7 +28,7 @@ O relatório a seguir apresenta os testes realizados pela equipe baseado no plan
 
 ![Imagem6](https://user-images.githubusercontent.com/90852295/168499527-edb2b28e-8d09-47ec-b2d4-e01ef880bd19.jpg)
 
-2 – Cadastrar estacionamento
+## 2 – Cadastrar estacionamento
 
 2.1 Após acessar o site através do navegador conectado à internet, o usuário seleciona a opção “estacionamento”:
 
