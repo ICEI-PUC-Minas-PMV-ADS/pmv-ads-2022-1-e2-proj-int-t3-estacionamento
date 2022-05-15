@@ -69,7 +69,7 @@ namespace webWhyPark.Controllers
                 cadastroCli.Senha = BCrypt.Net.BCrypt.HashPassword(cadastroCli.Senha, BCrypt.Net.SaltRevision.Revision2B);
                 _context.Add(cadastroCli);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("~/LoginCliente/Login");
             }
             return View();
         }

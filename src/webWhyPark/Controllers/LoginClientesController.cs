@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using webWhyPark.Context;
+using webWhyPark;
 using webWhyPark.Models;
 using System;
 using System.Security.Claims;
@@ -28,61 +29,59 @@ namespace webWhyPark.Controllers
         //Criar rota do Login do Cliente
 
         //GET LoginCliente/Login
-        public IActionResult Login()
+        public IActionResult Login(bool errLogin)
         {
+            if (errLogin)
+            {
+                ViewBag.Erro = "Nickname e/ou senha estão incorretos";
+            }
             return View();
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost, AllowAnonymous]
         public async Task<IActionResult> Login([Bind("Email,Senha")] Cliente cliente)
         {
-            var loginCli = await _context.Clientes
+
+
+            var client = await _context.Clientes
                 .FirstOrDefaultAsync(m => m.Email == cliente.Email);
-            Console.WriteLine(loginCli);
-            Console.WriteLine(cliente.Senha);
-            if (loginCli == null)
+            if (client?.Email == "")
             {
-                ViewBag.message = "Usuário e/ou senha inválidos.";
-                return View();
+                return RedirectToAction("Index", new { erroLogin = true });
             }
 
-            bool senhaCorreta = BCrypt.Net.BCrypt.Verify(cliente.Senha, loginCli.Senha);
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(cliente.Senha, client?.Senha);
 
-            if (senhaCorreta)
+            if (client?.Email == cliente.Email && senhaValida)
             {
-                var claims = new List<Claim>
 
-                {
-                    new Claim(ClaimTypes.Name, loginCli.Email),
-                    new Claim(ClaimTypes.NameIdentifier, loginCli.Email)
-                };
+                await new Services().Login(HttpContext, client!);
+                return RedirectToAction("Profile");
+            }
+            else
+            {
+                return RedirectToAction("Index", new { erroLogin = true });
 
-                var loginIdentity = new ClaimsIdentity(claims, "login");
-
-                ClaimsPrincipal principal = new ClaimsPrincipal(loginIdentity);
-
-                var props = new AuthenticationProperties
-                {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
-                    IsPersistent = true,
-                };
-
-                await HttpContext.SignInAsync(principal, props);
-
-                return Redirect("/"); //Redireciona para o home da aplicação
             }
 
-            ViewBag.Message = "Email e/ou senha inválidos!";
-            return View();
         }
 
+
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync();
-            return RedirectToAction("Login, LoginCliente"); //Redireciona para a página de Login
+            await new Services().Logout(HttpContext);
+            return Redirect("~/Home/Index");
+
+        }
+
+        [Authorize(Roles = "cliente")]
+        public IActionResult Profile()
+        {
+            ViewBag.Permissoes = HttpContext.User.Claims.Where(x => x.Type == ClaimTypes.Role).Select(x => x.Value);
+            return View();
+
         }
 
         public IActionResult AcessDenied()
@@ -91,6 +90,7 @@ namespace webWhyPark.Controllers
         }
 
         //Get: LoginCliente
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Clientes.ToListAsync());

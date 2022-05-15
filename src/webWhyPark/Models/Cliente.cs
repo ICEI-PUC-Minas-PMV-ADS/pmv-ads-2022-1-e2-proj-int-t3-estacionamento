@@ -26,5 +26,7 @@ namespace webWhyPark.Models
         [Required(ErrorMessage = "Obrigatório informar uma senha!")]
         public string Senha { get; set; } = null!;
 
+        public string Cargo { get; set; } = "cliente";
+
     }
 }

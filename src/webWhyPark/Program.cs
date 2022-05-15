@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using webWhyPark.Context;
 using DotNetEnv;
+using Microsoft.AspNetCore.CookiePolicy;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,12 @@ DotNetEnv.Env.Load();
 var sqlConnection = Environment.GetEnvironmentVariable("URL_DATABASE");
 Console.WriteLine("Servidor rodando");
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = new PathString("/LoginCliente/AcessDenied/");//401 - Unauthorized
+    options.AccessDeniedPath = new PathString("/LoginCliente/AcessDenied/");
+}
+);
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
 optios.UseSqlServer(connectionString: sqlConnection!)
 
@@ -31,6 +39,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseCookiePolicy(new CookiePolicyOptions
+{
+    MinimumSameSitePolicy = SameSiteMode.Strict,
+    HttpOnly = HttpOnlyPolicy.Always
+});
 
 app.UseAuthentication();
 
