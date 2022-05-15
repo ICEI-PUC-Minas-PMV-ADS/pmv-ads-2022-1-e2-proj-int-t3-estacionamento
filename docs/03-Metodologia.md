@@ -28,9 +28,10 @@ No processo de implementação do Scrum o grupo irá fazer uso de ferramentas on
 
 Também serão empregadas as seguintes ferramentas:
 
-- Editor de código: VS Code;
 - Ferramentas de comunicação: Teams, Whatsapp, Discord;
-- Ferramentas de desenho de tela (wireframing): Figma.
+- Ferramentas de desenho de tela (wireframing): Figma;
+- Editor de código fonte (multiplataforma): Microsoft Visual Studio Code;
+- Armazenamento em nuvem: Microsoft Windows Azure.
 
 O uso eventual de outras ferramentas poderá ser incorporado à descrição do projeto no decorrer de sua execução.
 
@@ -50,6 +51,6 @@ A incorporação de outros elementos para execução de tarefas e desenvolviment
 
 ## Gestão de código fonte
 
-Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature. Uma explicação rápida sobre este processo é apresentada no vídeo "The gitflow workflow - in less than 5 mins".
+Para gestão do código fonte do software desenvolvido pela equipe será utilizado o processo baseado no Git Flow, conforme descrito na figura a seguir. Deste modo, as manutenções do código serão realizadas de forma separada, sempre identificadas, possibilitando o monitoramento das atualizações e consequentemente otimizando a gestão do projeto como um todo.  
 
 ![Git Flow](img/gitFlow.png)
