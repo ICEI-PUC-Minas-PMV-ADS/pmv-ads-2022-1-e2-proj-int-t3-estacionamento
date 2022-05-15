@@ -1,15 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using webWhyPark.Context;
-using DotNetEnv;
 using Microsoft.AspNetCore.CookiePolicy;
 
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
-DotNetEnv.Env.Load();
-var sqlConnection = Environment.GetEnvironmentVariable("URL_DATABASE");
-Console.WriteLine("Servidor rodando");
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
 {
@@ -18,7 +14,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 }
 );
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
-optios.UseSqlServer(connectionString: sqlConnection!)
+optios.UseSqlServer(@"Server=tcp:whypark.database.windows.net,1433;Initial Catalog=WhyPark;Persist Security Info=False;User ID=whypark;Password=@Pucminas;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
 
 );
 
