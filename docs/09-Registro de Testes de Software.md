@@ -26,13 +26,14 @@ O relatório a seguir apresenta os testes realizados pela equipe baseado no plan
 
 1.6 O sistema direciona o usuário para a conta criada:
 
-![Imagem6](https://user-images.githubusercontent.com/90852295/168499527-edb2b28e-8d09-47ec-b2d4-e01ef880bd19.jpg)
+<img src="https://user-images.githubusercontent.com/90852295/168500599-6e660a7a-8cd2-4dd0-a1a2-7ebc5021ceae.jpeg" width="565">
+
 
 ## 2 – Cadastrar estacionamento
 
 2.1 Após acessar o site através do navegador conectado à internet, o usuário seleciona a opção “estacionamento”:
 
-![Imagem7](https://user-images.githubusercontent.com/90852295/168499601-34cc047a-bc88-4d49-9b48-ea3ab5f479b0.png)
+<img src="https://user-images.githubusercontent.com/83430126/168500221-f4b8a3aa-4ea4-4d79-abc0-b59c02f5d295.png" width="565">
 
 2.2 Em seguida o usuário clica em “cadastre seu estacionamento”:
 
