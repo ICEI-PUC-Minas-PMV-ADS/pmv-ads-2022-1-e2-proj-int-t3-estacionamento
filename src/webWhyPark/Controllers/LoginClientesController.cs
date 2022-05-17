@@ -81,7 +81,6 @@ namespace webWhyPark.Controllers
         {
             ViewBag.Permissoes = HttpContext.User.Claims.Where(x => x.Type == ClaimTypes.Role).Select(x => x.Value);
             return View();
-
         }
 
         public IActionResult AcessDenied()
