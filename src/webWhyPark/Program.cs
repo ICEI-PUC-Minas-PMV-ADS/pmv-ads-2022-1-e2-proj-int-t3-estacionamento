@@ -14,7 +14,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 }
 );
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
-optios.UseSqlServer(@"Server=tcp:whypark.database.windows.net,1433;Initial Catalog=WhyPark;Persist Security Info=False;User ID=whypark;Password=@Pucminas;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
+optios.UseSqlServer(@"Server=DESKTOP-7JPLA67\MSSQLSERVER01;Database=whyPark;Trusted_Connection=true")
 
 );
 
