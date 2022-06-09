@@ -65,10 +65,11 @@ namespace webWhyPark.Controllers
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionamento)
+        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email,Senha")] Estacionamento estacionamento)
         {
             if (ModelState.IsValid)
             {
+                estacionamento.Senha = BCrypt.Net.BCrypt.HashPassword(estacionamento.Senha, BCrypt.Net.SaltRevision.Revision2B);
                 _context.Add(estacionamento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
