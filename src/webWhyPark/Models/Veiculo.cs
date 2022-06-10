@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace webWhyPark.Models
 {
-    public class Veiculos
+    [Table("Veiculos")]
+    public class Veiculo
 
     {
 

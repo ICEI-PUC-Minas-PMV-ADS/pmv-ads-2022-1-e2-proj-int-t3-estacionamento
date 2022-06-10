@@ -14,11 +14,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 }
 );
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
-<<<<<<< HEAD
 optios.UseSqlServer(@"Server=localhost;Database=whyPark;Trusted_Connection=true")
-=======
-optios.UseSqlServer(@"Server=DESKTOP-7JPLA67\MSSQLSERVER01;Database=whyPark;Trusted_Connection=true")
->>>>>>> 488ee5fa6ae591e61f869794a96964a464104163
 
 );
 

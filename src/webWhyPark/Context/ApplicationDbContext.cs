@@ -17,6 +17,8 @@ namespace webWhyPark.Context
         public DbSet<RedeSocial> RedesSociais { get; set; } = null!;
         public DbSet<Cliente> Clientes { get; set; } = null!;
 
+        public DbSet<Veiculo> Veiculos { get; set; } = null!;
+
 
     }
 }
