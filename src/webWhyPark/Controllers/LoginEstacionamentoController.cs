@@ -8,16 +8,15 @@ using System.Security.Claims;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-
 namespace webWhyPark.Controllers
 {
-    public class LoginClienteController : Controller
+    public class LoginEstacionamento : Controller
     {
         private readonly ApplicationDbContext _context = null!;
 
 
         //Construtor do Login do Cliente no Contexto
-        public LoginClienteController(ApplicationDbContext context)
+        public LoginEstacionamento(ApplicationDbContext context)
         {
             if (context != null)
                 _context = context;
@@ -37,24 +36,23 @@ namespace webWhyPark.Controllers
 
 
         [HttpPost, AllowAnonymous]
-        public async Task<IActionResult> Login([Bind("Email,Senha")] Cliente cliente)
+        public async Task<IActionResult> Login([Bind("Email,Senha")] Estacionamento estacionamento)
         {
 
 
-            var client = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.Email == cliente.Email);
-            if (client?.Email == "")
+            var park = await _context.Estacionamentos.FirstOrDefaultAsync(m => m.Email == estacionamento.Email);
+            if (park?.Email == "")
             {
                 return RedirectToAction("Index", new { erroLogin = true });
             }
 
-            bool senhaValida = BCrypt.Net.BCrypt.Verify(cliente.Senha, client?.Senha);
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(estacionamento.Senha, park?.Senha);
 
-            if (client?.Email == cliente.Email && senhaValida)
+            if (park?.Email == estacionamento.Email && senhaValida)
             {
-                TempData["Nome"] = client.Nome;
-                await new Services().Login(HttpContext, client!);
-                return RedirectToAction("Profile", client);
+                TempData["Nome"] = park?.RazaoSocial;
+                await new ServicesEstacioanamento().Login(HttpContext, park!);
+                return RedirectToAction("Profile");
             }
             else
             {
@@ -68,12 +66,12 @@ namespace webWhyPark.Controllers
         [Authorize]
         public async Task<IActionResult> Logout()
         {
-            await new Services().Logout(HttpContext);
+            await new ServicesEstacioanamento().Logout(HttpContext);
             return Redirect("~/Home/Index");
 
         }
 
-        [Authorize(Roles = "cliente")]
+        [Authorize(Roles = "gestor")]
         public IActionResult Profile()
         {
             ViewBag.Permissoes = HttpContext.User.Claims.Where(x => x.Type == ClaimTypes.Role).Select(x => x.Value);
@@ -89,7 +87,7 @@ namespace webWhyPark.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Estacionamentos.ToListAsync());
         }
 
         //Get: LoginCliente/Details
@@ -100,7 +98,7 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var loginCli = await _context.Clientes
+            var loginCli = await _context.Estacionamentos
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (loginCli == null)
             {
@@ -108,7 +106,6 @@ namespace webWhyPark.Controllers
             }
             return View(loginCli);
         }
-
 
     }
 }

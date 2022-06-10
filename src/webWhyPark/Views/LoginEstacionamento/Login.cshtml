@@ -1,29 +1,27 @@
 @model webWhyPark.Models.Estacionamento
 
 @{
-    ViewData["Title"] = "Cadastro do estacionamento";
+    ViewData["Title"] = "Efetuar login";
 
     <style scoped>
-        * {
+        .body {
             margin: 0;
         }
 
-        body {
-            background: #3f3c3c;
+        body * {
             box-sizing: border-box;
         }
 
-        .main-form {
-            margin-top: 6%;
+        .main-login {
             width: 100vw;
-            max-height: calc(100vh - 100px);
+            height: 100vh;
             background: rgb(63, 60, 60);
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .form-left {
+        .left-login {
             width: 50vw;
             display: flex;
             justify-content: center;
@@ -31,19 +29,19 @@
             flex-direction: column;
         }
 
-        .form-left>h1 {
-            font-size: 3vh;
+        .left-login>h1 {
+            font-size: 3vw;
             color: rgb(209, 205, 205);
         }
 
-        .form-right {
+        .right-login {
             width: 50vw;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .card-cadastro {
+        .card-login {
             width: 60%;
             display: flex;
             justify-content: center;
@@ -55,13 +53,13 @@
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.335);
         }
 
-        .card-cadastro>h1 {
+        .card-login>h1 {
             color: rgb(209, 205, 205);
             font-weight: 800;
             margin: 0;
         }
 
-        .inputbox {
+        .textfield {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -70,7 +68,7 @@
             margin: 10px 0px;
         }
 
-        .inputbox>input {
+        .textfield>input {
             width: 100%;
             border: none;
             border-radius: 10px;
@@ -82,12 +80,12 @@
             box-sizing: border-box;
         }
 
-        .inputbox>label {
+        .textfield>label {
             color: white;
             margin-bottom: 10px;
         }
 
-        .btn-cadastro {
+        .btn-login {
             width: 50%;
             padding: 16px 0px;
             margin: auto;
@@ -102,10 +100,9 @@
             background: lightgray;
             cursor: pointer;
             box-shadow: 0px 10px 4px -12px #0000005a;
-            white-space: normal;
         }
 
-        .form-left-img {
+        .left-login-image {
             height: 520px;
         }
     </style>
@@ -113,60 +110,43 @@
 
 <body>
 
-    <div class="main-form">
-
-        <div class="form-left">
-            <h1>Cadastre o seu estacionamento!</h1>
-            <img src="/../imagens/parking-animate.svg" class="form-left-img" alt="estacionamento">
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Já possui cadastro?<br>Faça o seu login!</h1>
+            <img src="/../imagens/carro.svg" class="left-login-image" alt="carro">
         </div>
-
-        <div class="form-right">
-            <div class="card-cadastro">
-                <h1>Cadastro</h1>
-                <form asp-action="Create">
+        <div class="right-login">
+            <div class="card-login">
+                <h1 class="fs-1">Login Gestor</h1>
+                <form asp-action="Login" class="w-75">
                     <div asp-validation-summary="ModelOnly" class="text-danger">
                     </div>
-
-                    <div class="inputbox">
-                        <label asp-for="RazaoSocial" class="control-label"></label>
-                        <input asp-for="RazaoSocial" class="form-control" />
-                        <span asp-validation-for="RazaoSocial" class="text-danger"></span>
-                    </div>
-                    <div class="inputbox">
-                        <label asp-for="CNPJ" class="control-label"></label>
-                        <input asp-for="CNPJ" class="form-control" />
-                        <span asp-validation-for="CNPJ" class="text-danger"></span>
-                    </div>
-                    <div class="inputbox">
-                        <label asp-for="Telefone" class="control-label"></label>
-                        <input asp-for="Telefone" class="form-control" />
-                        <span asp-validation-for="Telefone" class="text-danger"></span>
-                    </div>
-                    <div class="inputbox">
+                    <div class="textfield">
                         <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" type="email" />
+                        <input asp-for="Email" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
-
-                    <div class="inputbox">
+                    <div class="textfield">
                         <label asp-for="Senha" class="control-label"></label>
-                        <input asp-for="Senha" class="form-control" type="password" />
+                        <input asp-for="Senha" type="password" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
-
-
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        @* <a class="btn-cadastro" asp-action="Index">Voltar</a> *@
-                        <input type="submit" value="Cadastrar" class="btn-cadastro" />
+                        @* <a class="btn-login" asp-controller="Home" asp-action="Index">Voltar</a> *@
+                        <input type="submit" value="Entrar" class="btn-login mt-3" />
                     </div>
-
                 </form>
             </div>
         </div>
 
 </body>
 
+<hr />
 
-@section Scripts{
+<h3> @ViewBag.Message </h3>
+</div>
+</div>
+
+@section Scripts {
 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

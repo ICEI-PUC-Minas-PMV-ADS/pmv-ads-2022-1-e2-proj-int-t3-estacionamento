@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using webWhyPark.Models;
 namespace webWhyPark
 {
-    public class Services
+    public class ServicesEstacioanamento
     {
-        public async Task Login(HttpContext ctx, Cliente cliente)
+        public async Task Login(HttpContext ctx, Estacionamento park)
         {
             var claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.Name, cliente.Nome));
-            claims.Add(new Claim(ClaimTypes.Role, cliente.Cargo));
+            claims.Add(new Claim(ClaimTypes.Name, park.RazaoSocial));
+            claims.Add(new Claim(ClaimTypes.Role, park.Cargo));
 
             var claimsIdentity = new ClaimsPrincipal(
                 new ClaimsIdentity(
@@ -35,5 +35,4 @@ namespace webWhyPark
 
         }
     }
-
 }
