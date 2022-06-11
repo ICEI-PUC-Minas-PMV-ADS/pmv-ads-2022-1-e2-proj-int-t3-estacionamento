@@ -24,6 +24,7 @@ namespace webWhyPark.Models
         [Required(ErrorMessage = "Obrigatório informar o email!")]
 
         public string Email { get; set; } = null!;
+        public string Senha { get; set; } = null!;
 
 
     }

@@ -55,9 +55,9 @@ namespace webWhyPark.Controllers
 
             if (client?.Email == cliente.Email && senhaValida)
             {
-
+                TempData["Nome"] = client.Nome;
                 await new Services().Login(HttpContext, client!);
-                return RedirectToAction("Profile");
+                return RedirectToAction("Profile", client);
             }
             else
             {

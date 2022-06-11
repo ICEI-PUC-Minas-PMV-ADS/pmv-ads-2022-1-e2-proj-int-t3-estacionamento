@@ -3,33 +3,33 @@ using Microsoft.EntityFrameworkCore;
 using webWhyPark.Context;
 using webWhyPark.Models;
 using System;
+using System.Security.Claims;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace webWhyPark.Controllers
 {
-    public class EstacionamentoController : Controller
+    public class VeiculoController : Controller
     {
-
         private readonly ApplicationDbContext _context = null!;
 
-        //Constructor
-        public EstacionamentoController(ApplicationDbContext context)
+
+        //Construtor do Cadastro do Veiculo no Contexto
+        public VeiculoController(ApplicationDbContext context)
         {
             if (context != null)
                 _context = context;
         }
 
-
-        //Index
-        //GET: Estacionamentos
+        //Index 
+        //GET: Veiculo
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Estacionamentos.ToListAsync());
+            return View(await _context.Veiculos.ToListAsync());
         }
 
-        //GET: Estacioanamentos/Details/2
+        //GET: Veiculos/Details/2
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -37,23 +37,22 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            //Recupera o estacionamento
+            //Recupera o Veiculo
 
-            var estacionamento = await _context.Estacionamentos
+            var veiculoCadastrado = await _context.Veiculos
                                 .FirstOrDefaultAsync(e => e.Id == id);
 
-            if (estacionamento == null)
+            if (veiculoCadastrado == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(veiculoCadastrado);
 
         }
 
-
-        //Criar estacionameto rota
-        //GET Estacionamento/Create
+        //Criar rota do Cadastro do Veiculo
+        //GET Veiculo/Create
 
         public IActionResult Create()
         {
@@ -61,25 +60,22 @@ namespace webWhyPark.Controllers
         }
 
 
-
         [HttpPost, ActionName("Create")]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Create([Bind("Id,RazaoSocial,CNPJ,Telefone,Email,Senha")] Estacionamento estacionamento)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Placa,Cor,Modelo,Veiculo")] Veiculo veiculoCadastrado)
         {
             if (ModelState.IsValid)
             {
-                estacionamento.Senha = BCrypt.Net.BCrypt.HashPassword(estacionamento.Senha, BCrypt.Net.SaltRevision.Revision2B);
-                _context.Add(estacionamento);
+
+                _context.Add(veiculoCadastrado);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("/");
             }
             return View();
         }
 
-
-        //Recupera o estacionamento para editar
-        //GET: Estacionamento/Edit/9
+        //Recupera o Veiculo para editar
+        //GET: Veiculo/Edit/9
 
         public async Task<IActionResult> Edit(int? id)
         {
@@ -88,33 +84,36 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var estacionamento = await _context.Estacionamentos.FindAsync(id);
+            var veiculoCadastrado = await _context.Veiculos.FindAsync(id);
 
-            if (estacionamento == null)
+            if (veiculoCadastrado == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(veiculoCadastrado);
         }
 
-        //POST Estacionamento/Delete/5
+        //POST Veiculo/Edit/5
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RazaoSocial,CNPJ,Telefone,Email")] Estacionamento estacionamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Placa,Cor,Modelo,Veiculo")] Veiculo veiculoCadastrado)
         {
+            if (id != veiculoCadastrado.Id)
+            {
+                return NotFound();
+            }
             if (ModelState.IsValid)
             {
 
                 try
                 {
-                    _context.Estacionamentos.Update(estacionamento);
+                    _context.Veiculos.Update(veiculoCadastrado);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EstacionamentoExists(id))
+                    if (!VeiculoExists(id))
                     {
                         return NotFound();
                     }
@@ -126,13 +125,11 @@ namespace webWhyPark.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(estacionamento);
+            return View(veiculoCadastrado);
         }
 
-
-        //Recupera o estacionamento para deletar
-        //GET: Estacionamento/Edit/9
-
+        //Recupera o Veiculo para deletar
+        //GET: Veiculo/Delete/9
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,31 +137,33 @@ namespace webWhyPark.Controllers
                 return NotFound();
             }
 
-            var estacionamento = await _context.Estacionamentos
+            var veiculoCadastrado = await _context.Veiculos
                                 .FirstOrDefaultAsync(d => d.Id == id);
 
-            if (estacionamento == null)
+            if (veiculoCadastrado == null)
             {
                 return NotFound();
             }
 
-            return View(estacionamento);
+            return View(veiculoCadastrado);
         }
 
-        //POST Estacionamento/Delete/5
+        //POST Veiculo/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            var estacionamento = await _context.Estacionamentos.FindAsync(id);
-            _context.Estacionamentos.Remove(estacionamento!);
+            var veiculoCadastrado = await _context.Veiculos.FindAsync(id);
+            _context.Veiculos.Remove(veiculoCadastrado!);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        public bool EstacionamentoExists(int id)
+        public bool VeiculoExists(int id)
         {
-            return _context.Estacionamentos.Any(e => e.Id == id);
+            return _context.Veiculos.Any(e => e.Id == id);
         }
+
+
+
     }
 }
