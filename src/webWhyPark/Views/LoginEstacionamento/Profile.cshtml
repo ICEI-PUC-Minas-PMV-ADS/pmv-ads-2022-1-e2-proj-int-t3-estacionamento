@@ -1,4 +1,4 @@
-@model IEnumerable<webWhyPark.Models.Cliente>
+@model IEnumerable<webWhyPark.Models.Estacionamento>
 
 @{
     ViewData["Title"] = "Perfil do Cliente";
@@ -329,11 +329,11 @@
                     </a>
                 </li>
                 <li>
-                    <a asp-action="Logout">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
-                        <span class="title">Sair</span>
+                        <a span class="title" asp-action="Logout">Sair</a></span>
                     </a>
                 </li>
             </ul>

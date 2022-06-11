@@ -12,11 +12,9 @@
 </head>
 
 <body>
-    <header>
-    </header>
+
     <main role=" main ">
         @RenderBody()
-
     </main>
 
     <footer class=" footer text-muted p-0 m-0">
@@ -26,7 +24,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-
 </body>
 
 </html>

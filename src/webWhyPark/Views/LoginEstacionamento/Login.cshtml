@@ -1,4 +1,4 @@
-@model webWhyPark.Models.Cliente
+@model webWhyPark.Models.Estacionamento
 
 @{
     ViewData["Title"] = "Efetuar login";
@@ -117,7 +117,7 @@
         </div>
         <div class="right-login">
             <div class="card-login">
-                <h1 class="fs-1">Login</h1>
+                <h1 class="fs-1">Login Gestor</h1>
                 <form asp-action="Login" class="w-75">
                     <div asp-validation-summary="ModelOnly" class="text-danger">
                     </div>
@@ -142,6 +142,7 @@
 </body>
 
 <hr />
+
 <h3> @ViewBag.Message </h3>
 </div>
 </div>
