@@ -126,11 +126,16 @@
                         <input asp-for="Email" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
+                 
                     <div class="textfield">
                         <label asp-for="Senha" class="control-label"></label>
                         <input asp-for="Senha" type="password" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
+                    <div class="textfield align-text-center">
+                         <span class="text-danger"> @TempData["erroMensage"]</span> 
+                    </div>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         @* <a class="btn-login" asp-controller="Home" asp-action="Index">Voltar</a> *@
                         <input type="submit" value="Entrar" class="btn-login mt-3" />
@@ -142,7 +147,6 @@
 </body>
 
 <hr />
-<h3> @ViewBag.Message </h3>
 </div>
 </div>
 

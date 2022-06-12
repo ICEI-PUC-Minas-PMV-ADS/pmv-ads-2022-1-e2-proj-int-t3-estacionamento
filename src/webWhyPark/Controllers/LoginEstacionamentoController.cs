@@ -41,9 +41,10 @@ namespace webWhyPark.Controllers
 
 
             var park = await _context.Estacionamentos.FirstOrDefaultAsync(m => m.Email == estacionamento.Email);
-            if (park?.Email == "")
+            if (park == null)
             {
-                return RedirectToAction("Index", new { erroLogin = true });
+                TempData["erroMensage"] = "Email ou senha não cadastrada !";
+                return RedirectToAction("Login");
             }
 
             bool senhaValida = BCrypt.Net.BCrypt.Verify(estacionamento.Senha, park?.Senha);
@@ -56,7 +57,8 @@ namespace webWhyPark.Controllers
             }
             else
             {
-                return RedirectToAction("Index", new { erroLogin = true });
+                TempData["erroMensage"] = "Email ou senha não cadastrada !";
+                return RedirectToAction("Login");
 
             }
 

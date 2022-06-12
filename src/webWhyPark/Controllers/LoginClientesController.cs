@@ -43,22 +43,25 @@ namespace webWhyPark.Controllers
 
             var client = await _context.Clientes
                 .FirstOrDefaultAsync(m => m.Email == cliente.Email);
-            if (client?.Email == "")
+            if (cliente?.Email == "" || client == null)
             {
-                return RedirectToAction("Login", new { erroLogin = true });
+                TempData["erroMensage"] = "Email ou senha não cadastrada !";
+                return RedirectToAction("Login");
             }
 
-            bool senhaValida = BCrypt.Net.BCrypt.Verify(cliente.Senha, client?.Senha);
 
-            if (client?.Email == cliente.Email && senhaValida)
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(cliente?.Senha, client?.Senha);
+
+            if (client?.Email == cliente?.Email && senhaValida)
             {
-                TempData["Nome"] = client.Nome;
+                TempData["Nome"] = client?.Nome;
                 await new Services().Login(HttpContext, client!);
                 return RedirectToAction("Profile");
             }
             else
             {
-                return RedirectToAction("Login", new { erroLogin = true });
+                TempData["erroMensage"] = "Email ou senha não cadastrada !";
+                return RedirectToAction("Login");
 
             }
 
