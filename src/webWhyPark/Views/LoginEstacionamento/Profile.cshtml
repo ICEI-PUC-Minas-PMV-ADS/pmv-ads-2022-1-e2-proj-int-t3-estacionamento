@@ -280,7 +280,7 @@
                         <span class="title"> @TempData["Nome"]</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="gerenciarConta()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
@@ -288,23 +288,23 @@
                         <span class="title">Gerenciar conta</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="cadVaga()">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="add-circle-outline"></ion-icon>
                         </span>
                         <span class="title">Cadastrar Vagas</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="clientesList()">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="id-card-outline"></ion-icon>
                         </span>
                         <span class="title">Lista clientes cadastrados</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="entradaSaidaFunc()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="file-tray-full-outline"></ion-icon>
@@ -312,31 +312,31 @@
                         <span class="title">Registrar Entrada/Saída</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="listaEntradaSaidaFunc()">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="clipboard-outline"></ion-icon>
                         </span>
                         <span class="title">Listar Entrada/Saída</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="PrecoHoraFunc()">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="timer-outline"></ion-icon>
                         </span>
                         <span class="title">Preços e Horários</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="caixaFunc()">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="cash-outline"></ion-icon>
                         </span>
                         <span class="title">Caixa</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="mensagem()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
@@ -344,7 +344,7 @@
                         <span class="title">Mensagens</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="infofunc()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="information-circle-outline"></ion-icon>
@@ -352,7 +352,7 @@
                         <span class="title">Ajuda</span>
                     </a>
                 </li>
-                <li>
+                <li >
                     <a asp-action="Logout">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
@@ -383,7 +383,8 @@
             </div>
         </div>
 
-        @* Cards *@
+      <div id="gerenciarEst" >
+          @* Cards *@
         <div class="cardBox">
             <div class="card">
                 <div>
@@ -417,49 +418,21 @@
 
 
         </div>
+      </div>
 
-
-
-
-
-
-        @*Ícones*@
+      <div id="cadVagas"> Cadastrar vagas</div>
+      <div id="clientes">Clientes </div>
+      <div id="entradaSaida">Cadastrar entrada e saída</div>
+      <div id="listaEntradaSaida">Listar entrada e saídas </div>
+      <div id="PrecoHora">Preço Hora</div>
+      <div id="caixa">Caixa</div>
+      <div id="msgEsta">Menssagens</div>
+      <div id="helpEst">Ajuda</div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script>
-            @* Configurando o menu hamburguer ou menu toggle, colocando dentro da barra do dashboard *@
-                let toggle = document.querySelector('.toggle');
-            let navigation = document.querySelector('.navigation');
-            let main = document.querySelector('.main');
+           <script src="~/js/estacionamento.js" asp-append-version="true"></script>
 
-            toggle.onclick = function () {
-                navigation.classList.toggle('active');
-                main.classList.toggle('active');
-            }
-
-        </script>
-
-        <script>
-            @* Adicionando "hovered" class quando um item da lista é selecionado *@
-                let list = document.querySelectorAll('.navigation li');
-            function activeLink() {
-                list.forEach((item) =>
-                    item.classList.remove('hovered'));
-
-                this.classList.add('hovered');
-            }
-            list.forEach((item) =>
-                item.addEventListener('mouseover', activeLink));
-        </script>
+       
 
 </body>
-
-@*
-    @Html.ActionLink("Fazer Logoff","Logout");*@
-
-@* @foreach (var perm in ViewBag.Permissoes)
-    {
-    <p>Cargo:<u>@perm</u></p>
-    }
-*@
