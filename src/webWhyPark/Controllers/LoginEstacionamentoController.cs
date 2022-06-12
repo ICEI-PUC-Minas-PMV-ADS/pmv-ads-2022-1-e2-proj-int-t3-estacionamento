@@ -36,7 +36,7 @@ namespace webWhyPark.Controllers
 
 
         [HttpPost, AllowAnonymous]
-        public async Task<IActionResult> Login([Bind("Email,Senha")] Estacionamento estacionamento)
+        public async Task<IActionResult> LoginPark([Bind("Email,Senha")] Estacionamento estacionamento)
         {
 
 

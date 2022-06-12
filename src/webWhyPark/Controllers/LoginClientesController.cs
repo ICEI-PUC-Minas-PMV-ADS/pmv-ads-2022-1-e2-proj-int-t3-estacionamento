@@ -45,7 +45,7 @@ namespace webWhyPark.Controllers
                 .FirstOrDefaultAsync(m => m.Email == cliente.Email);
             if (client?.Email == "")
             {
-                return RedirectToAction("Index", new { erroLogin = true });
+                return RedirectToAction("Login", new { erroLogin = true });
             }
 
             bool senhaValida = BCrypt.Net.BCrypt.Verify(cliente.Senha, client?.Senha);
@@ -58,7 +58,7 @@ namespace webWhyPark.Controllers
             }
             else
             {
-                return RedirectToAction("Index", new { erroLogin = true });
+                return RedirectToAction("Login", new { erroLogin = true });
 
             }
 
