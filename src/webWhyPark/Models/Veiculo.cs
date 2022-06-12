@@ -13,10 +13,6 @@ namespace webWhyPark.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Display(Name = "Nome")]
-        [Required(ErrorMessage = "Obrigatório informar o nome!")]
-        public string Nome { get; set; } = null!;
-
         [Display(Name = "Placa")]
         [Required(ErrorMessage = "Obrigatório informar a placa!")]
         public string Placa { get; set; } = null!;
