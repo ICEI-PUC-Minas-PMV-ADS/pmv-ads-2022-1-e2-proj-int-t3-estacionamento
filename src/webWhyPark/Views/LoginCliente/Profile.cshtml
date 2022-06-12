@@ -267,20 +267,22 @@
 }
 
 
+
+
 <body>
 
     <div class="container">
         <div class="navigation">
             <ul>
-                <li>
-                    <a href="#">
+                <li  >
+                    <a href="#" >
                         <span class="icon">
                             <ion-icon name="person-circle-outline"></ion-icon>
                         </span>
                         <span class="title"> @TempData["Nome"]</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="gerFunction()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
@@ -288,7 +290,7 @@
                         <span class="title">Gerenciar conta</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="cadVeiculos()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
@@ -297,7 +299,7 @@
                             asp-action="Privacy">Cadastrar Veículos</span>
                     </a>
                 </li>
-                <li>
+                <li  onclick="historico()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="file-tray-full-outline"></ion-icon>
@@ -305,7 +307,7 @@
                         <span class="title">Histórico</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="favoritos()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="star-outline"></ion-icon>
@@ -313,7 +315,7 @@
                         <span class="title">Favoritos</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="mesagem()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
@@ -321,7 +323,7 @@
                         <span class="title">Mensagens</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="info()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="information-circle-outline"></ion-icon>
@@ -360,7 +362,8 @@
             </div>
         </div>
 
-        @* Cards *@
+        <div id="gerenciar">
+             @* Cards *@
         <div class="cardBox">
             <div class="card">
                 <div>
@@ -381,7 +384,6 @@
                     <ion-icon name="star-outline"></ion-icon>
                 </div>
             </div>
-
             <div class="card">
                 <div>
                     <div class="numbers">1</div>
@@ -393,7 +395,35 @@
             </div>
 
 
+            <div>
+
+
+            </div>
+
         </div>
+        </div>
+
+        <div id="cadVeiculo">
+            Cadastrar veiculos
+        </div>
+
+        <div id="historico">
+            historico
+        </div>
+
+        <div id="favorito">
+        Favoritos       
+      </div>
+
+      <div id="msg">
+            Mensagens
+        </div>
+
+        <div id="help">
+            Ajuda
+        </div>
+
+
 
 
 
@@ -403,32 +433,8 @@
         @*Ícones*@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <script src="~/js/site.js" asp-append-version="true"></script>
 
-        <script>
-            @* Configurando o menu hamburguer ou menu toggle, colocando dentro da barra do dashboard *@
-                let toggle = document.querySelector('.toggle');
-            let navigation = document.querySelector('.navigation');
-            let main = document.querySelector('.main');
-
-            toggle.onclick = function () {
-                navigation.classList.toggle('active');
-                main.classList.toggle('active');
-            }
-
-        </script>
-
-        <script>
-            @* Adicionando "hovered" class quando um item da lista é selecionado *@
-                let list = document.querySelectorAll('.navigation li');
-            function activeLink() {
-                list.forEach((item) =>
-                    item.classList.remove('hovered'));
-
-                this.classList.add('hovered');
-            }
-            list.forEach((item) =>
-                item.addEventListener('mouseover', activeLink));
-        </script>
 
 </body>
 
