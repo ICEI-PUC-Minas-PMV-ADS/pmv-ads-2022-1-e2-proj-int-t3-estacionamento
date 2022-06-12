@@ -1,8 +1,14 @@
 # Registro de testes de software
 
 O relatório a seguir apresenta os testes realizados pela equipe baseado no plano de testes de software descrito no item 8 da documentação do projeto.
+Nesta etapa de implementação do projeto serão testados através de estratégia de caso de uso e funcional, as seguintes funcionalidades: 
+•	Caso de teste CT-01 – Cadastrar estacionamento
+•	Caso de teste CT-02 – Cadastrar estacionamento
+Em anexo, as imagens ilustrativas que demonstram passo a passo a utilização das funcionalidades disponibilizadas nesta etapa do desenvolvimento do projeto. 
 
-## 1 – Cadastrar cliente do estacionamento 
+1 – Cadastrar cliente do estacionamento 
+
+![1](https://user-images.githubusercontent.com/90852295/173209140-066685fd-7d0a-4fe6-bc36-0d48a6b8388f.png)
 
 1.1 Após acessar o site através do navegador conectado à internet, o usuário seleciona a opção “criar conta”:
 
@@ -31,6 +37,8 @@ O relatório a seguir apresenta os testes realizados pela equipe baseado no plan
 
 ## 2 – Cadastrar estacionamento
 
+![2](https://user-images.githubusercontent.com/90852295/173209163-43b959aa-e388-4d6b-8220-fd005abbc63c.png)
+
 2.1 Após acessar o site através do navegador conectado à internet, o usuário seleciona a opção “estacionamento”:
 
 <img src="https://user-images.githubusercontent.com/83430126/168500221-f4b8a3aa-4ea4-4d79-abc0-b59c02f5d295.png" width="565">
@@ -52,4 +60,5 @@ O relatório a seguir apresenta os testes realizados pela equipe baseado no plan
 ![Imagem11](https://user-images.githubusercontent.com/90852295/168499810-6165f0f2-1026-47dc-9b4e-e0b56667ba86.png)
 
 Ao final, a equipe constatou que as funcionalidades pretendidas nesta fase de implementação do projeto atenderam às expectativas almejadas, ressalvadas as devidas modificações que se farão necessárias no decorrer do uso das funcionalidades, como forma de melhoria da implementação. 
+
 
