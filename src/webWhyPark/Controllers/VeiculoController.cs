@@ -122,7 +122,7 @@ namespace webWhyPark.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(/*especificarCaminho*/);
             }
 
             return View(veiculoCadastrado);
@@ -148,7 +148,7 @@ namespace webWhyPark.Controllers
             return View(veiculoCadastrado);
         }
 
-        //POST Veiculo/Delete/5ewew
+        //POST Veiculo/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
@@ -156,7 +156,7 @@ namespace webWhyPark.Controllers
             var veiculoCadastrado = await _context.Veiculos.FindAsync(id);
             _context.Veiculos.Remove(veiculoCadastrado!);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(/*especificarCaminho*/);
         }
         public bool VeiculoExists(int id)
         {
