@@ -1,35 +1,54 @@
 # Registro de Testes de Usabilidade
 
-## 1. Apresentação 
-
-O relatório a seguir apresenta os testes realizados pela equipe baseado no plano de testes de software descrito no item 10 da documentação do projeto.
-
-Participaram dos testes 05 usuários voluntários, previamente orientados pela equipe a respeito do objetivo dos testes e os critérios de análise.
-O acesso ao sistema foi disponibilizado aos participantes através do endereço https://whypark.azurewebsites.net. 
-
-Após a realização da tarefa, o usuário atribuiu valor percentual de acordo com sua avalição subjetiva, sem qualquer interferência de terceiros. 
-
-Na primeira fase de implementação foram mensurados os seguintes quesitos:
-
-1. Qualidade da navegação
-
-![WhatsApp Image 2022-05-15 at 20 45 32](https://user-images.githubusercontent.com/83430126/168499512-c401066f-25bb-4b5b-91fb-fe1843aa8e00.jpeg)
 
 
-2. Eficiência do processo de cadastro do estacionamento
+1. Apresentação 
+- O relatório a seguir apresenta os testes realizados pela equipe baseado no plano de testes de software descrito no item 10 da documentação do projeto.
+- Participaram dos testes 05 usuários voluntários, previamente orientados pela equipe a respeito do objetivo dos testes e os critérios de análise.
+- O acesso ao sistema foi disponibilizado aos participantes através do endereço https://whypark.azurewebsites.net. 
+- Após a realização da tarefa, o usuário atribuiu valor percentual de acordo com sua avalição subjetiva, sem qualquer interferência de terceiros. 
 
-![WhatsApp Image 2022-05-15 at 20 46 58](https://user-images.githubusercontent.com/83430126/168499557-e24a559b-58f5-4b15-bd09-8fbeb521c569.jpeg)
+2 – Funcionalidades implementadas 
+
+Na primeira fase de implementação foram implementadas as seguintes funcionalidades: 
 
 
-3. Satisfação dos usuários ao realizar tais processos
+![1](https://user-images.githubusercontent.com/90852295/173209585-c7a0a59d-e71a-4bd6-8106-23aba7bcb6a9.png)
 
-![WhatsApp Image 2022-05-15 at 20 48 03](https://user-images.githubusercontent.com/83430126/168499602-de4bee1d-73dd-4463-840e-d55ff7cbba29.jpeg)
+![2](https://user-images.githubusercontent.com/90852295/173209586-8a73478f-04a7-450e-bd52-2bc6daf48af8.png)
 
 
-## 2. Observações gerais
+3 – Registros efetuados 
 
-Não foram relatados erros que impossibilitaram a utilização das funções apresentadas. 
+![3](https://user-images.githubusercontent.com/90852295/173209602-e9083c2e-cc9d-44c6-a57c-0f112b002a61.png)
+![4](https://user-images.githubusercontent.com/90852295/173209603-2e235581-761b-44a3-8663-8b9e40faf073.png)
 
-Notou-se ainda que a qualidade da navegação está diretamente associada à qualidade da conexão do usuário e às configurações do dispositivo utilizado para realização dos testes. 
+Através de uma escala de avaliação foram analisados os níveis de severidade de cada erro ou incompatibilidade eventualmente encontrados nas funcionalidades testadas, bem como foram avaliadas as heurísticas apresentadas na parte inicial deste plano de testes de usabilidade. 
 
-Ao final constatou-se que o índice de avaliação do sistema na primeira fase de implementação foi de 97,86%. 
+![5](https://user-images.githubusercontent.com/90852295/173209634-dbad6f08-3aed-46e2-9767-a2b7fcd8585f.png)
+
+
+![6](https://user-images.githubusercontent.com/90852295/173209670-c768c070-1335-44a0-9d1f-dda346a6a9d9.png)
+
+4 – Outras análises
+
+Além dos testes elencados no plano apresentado no item 8 deste projeto, foram analisados ainda outros quesitos que eventualmente podem inferir na qualidade da usabilidade do sistema. 
+1.	Qualidade da navegação
+
+![image](https://user-images.githubusercontent.com/90852295/173209694-3f724079-3aee-4bab-8f0d-fe704ed07181.png)
+
+2.	Eficiência do processo de cadastro do estacionamento
+
+![image](https://user-images.githubusercontent.com/90852295/173209705-6b998164-9754-4405-aef4-f3a9ac1c263c.png)
+
+3.	Satisfação dos usuários ao realizar tais processos
+
+![image](https://user-images.githubusercontent.com/90852295/173209716-a0660bc8-c74c-4cb5-9b8f-87b16d5ef979.png)
+
+
+5 - Observações gerais
+
+5.1 Não foram relatados erros que impossibilitaram a utilização das funções apresentadas. 
+5.2 Notou-se ainda que a qualidade da navegação está diretamente associada à qualidade da conexão do usuário e às configurações do dispositivo utilizado para realização dos testes. 
+
+
