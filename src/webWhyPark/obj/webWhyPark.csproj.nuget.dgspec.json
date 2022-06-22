@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julsergion\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {}
+    "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julsergion\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {
+    "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julsergion\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
         "projectName": "webWhyPark",
-        "projectPath": "C:\\Users\\julsergion\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
-        "packagesPath": "C:\\Users\\julsergion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julsergion\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\julsergion\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
