@@ -7092,11 +7092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
       "projectName": "webWhyPark",
-      "projectPath": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\webWhyPark.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Projeto\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\WhyPark\\pmv-ads-2022-1-e2-proj-int-t3-estacionamento\\src\\webWhyPark\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
