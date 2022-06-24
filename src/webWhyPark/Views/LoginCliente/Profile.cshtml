@@ -1,5 +1,6 @@
 @model IEnumerable<webWhyPark.Models.Cliente>
 
+
 @{
     ViewData["Title"] = "Perfil do Cliente";
 
@@ -403,9 +404,12 @@
             </div>
         </div>
 
-        <div id="cadVeiculo">
-            <form>
-                <div class="form-row">
+        <div id="cadVeiculo" class="w-100" >
+            <div class="w-100 d-flex  align-items-center border-black" >
+            <div class="form-control p-4 w-50">
+                <div class="form-row form d-flex">
+                <h1>Cadastre o veículo</h1>
+
                     <div class="col-md-4 mb-3">
                         <label for="validationDefault01">Placa</label>
                         <input type="text" class="form-control" id="validationDefault01" placeholder="" value=""
@@ -421,11 +425,11 @@
                         <input type="text" class="form-control" id="validationDefault03" placeholder="" required>
                     </div>
                     </label>
+            <button class="btn btn-secondary" type="submit">Enviar</button>
                 </div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
-        
-        </form>
+        </div>
+        </div>
     </div>
 
     <div id="historico">
