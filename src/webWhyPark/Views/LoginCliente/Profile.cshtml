@@ -274,8 +274,8 @@
     <div class="container">
         <div class="navigation">
             <ul>
-                <li  >
-                    <a href="#" >
+                <li>
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="person-circle-outline"></ion-icon>
                         </span>
@@ -299,7 +299,7 @@
                             asp-action="Privacy">Cadastrar Veículos</span>
                     </a>
                 </li>
-                <li  onclick="historico()">
+                <li onclick="historico()">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="file-tray-full-outline"></ion-icon>
@@ -363,77 +363,98 @@
         </div>
 
         <div id="gerenciar">
-             @* Cards *@
-        <div class="cardBox">
-            <div class="card">
+            @* Cards *@
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">12</div>
+                        <div class="cardName">Paradas</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="car-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">4</div>
+                        <div class="cardName">Favoritos</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">1</div>
+                        <div class="cardName">Mensagem</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+
                 <div>
-                    <div class="numbers">12</div>
-                    <div class="cardName">Paradas</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="car-outline"></ion-icon>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <div class="numbers">4</div>
-                    <div class="cardName">Favoritos</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="star-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="numbers">1</div>
-                    <div class="cardName">Mensagem</div>
-                </div>
-                <div class="iconBox">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                </div>
-            </div>
 
 
-            <div>
-
+                </div>
 
             </div>
-
-        </div>
         </div>
 
         <div id="cadVeiculo">
-            Cadastrar veiculos
+            <form>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">Placa</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="" value=""
+                            required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">Cor</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="" value=""
+                            required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">Modelo</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="" required>
+                    </div>
+                    </label>
+                </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
+        
+        </form>
+    </div>
 
-        <div id="historico">
-            historico
-        </div>
+    <div id="historico">
+        historico
+    </div>
 
-        <div id="favorito">
-        Favoritos       
-      </div>
+    <div id="favorito">
+        Favoritos
+    </div>
 
-      <div id="msg">
-            Mensagens
-        </div>
+    <div id="msg">
+        Mensagens
+    </div>
 
-        <div id="help">
-            Ajuda
-        </div>
-
-
-
-
-
+    <div id="help">
+        Ajuda
+    </div>
 
 
 
-        @*Ícones*@
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-       <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+
+
+    @*Ícones*@
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
 
 </body>
